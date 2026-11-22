@@ -49,6 +49,8 @@
 
     // Sobre
     $("sobre-texto").innerHTML = S.sobre.map((p) => `<p>${esc(p)}</p>`).join("");
+    $("numeros").hidden = !S.numeros.length;
+    document.querySelector(".sobre-grid").classList.toggle("so-texto", !S.numeros.length);
     $("numeros").innerHTML = S.numeros.map((n) => `<div class="numero"><b>${esc(n.valor)}</b><span>${esc(n.legenda)}</span></div>`).join("");
 
     // Como trabalho

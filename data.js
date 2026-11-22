@@ -64,12 +64,7 @@ window.SITE = {
       "Trabalho muito com inteligência artificial e gosto mesmo disso: uso-a no dia a dia para analisar informação, automatizar tarefas e encontrar novas formas de trabalhar. Interessa-me sobretudo a interseção entre media, dados e AI, e como podem levar a decisões mais inteligentes e estratégias de media mais fortes.",
     ],
 
-    numeros: [
-      { valor: "4", legenda: "anos de experiência em media" },
-      { valor: "10", legenda: "certificações profissionais" },
-      { valor: "AI", legenda: "no dia a dia de trabalho" },
-      { valor: "5+", legenda: "indústrias, de energia a luxo" },
-    ],
+    numeros: [], // vazio = os cartões de números não aparecem
 
     abordagem: [], // vazio = a secção "Como trabalho" não aparece
 
@@ -190,12 +185,7 @@ window.SITE = {
       "I work a lot with artificial intelligence and genuinely enjoy it: I use it every day to analyse information, automate tasks and find new ways of working. I'm especially interested in the intersection of media, data and AI, and how they can lead to smarter decisions and stronger media strategies.",
     ],
 
-    numeros: [
-      { valor: "4", legenda: "years of media experience" },
-      { valor: "10", legenda: "professional certifications" },
-      { valor: "AI", legenda: "in my everyday work" },
-      { valor: "5+", legenda: "industries, from energy to luxury" },
-    ],
+    numeros: [], // vazio = os cartões de números não aparecem
 
     abordagem: [], // vazio = a secção "Como trabalho" não aparece
 

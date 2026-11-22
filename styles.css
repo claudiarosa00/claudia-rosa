@@ -109,6 +109,8 @@ h2 {
   font-size: clamp(1.8rem, 3.5vw, 2.4rem); letter-spacing: -.01em; margin-bottom: 32px;
 }
 .sobre-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 48px; }
+.sobre-grid.so-texto { grid-template-columns: 1fr; }
+.so-texto .sobre-texto { max-width: 780px; }
 .sobre-texto p { color: var(--muted); font-size: 1.05rem; margin-bottom: 16px; }
 .numeros { display: grid; gap: 12px; align-content: start; }
 .numero {
