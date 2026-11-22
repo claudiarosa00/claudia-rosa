@@ -13,3 +13,7 @@ Site estático (HTML + CSS + JS), sem dependências nem build.
 3. Recebes um link tipo `o-teu-nome.vercel.app`. Partilha-o no LinkedIn.
 
 Alternativa sem GitHub: `npx vercel` dentro desta pasta.
+
+## Idiomas e CV
+- Os textos em português e inglês estão em `data.js` (`pt` e `en`). O link `?lang=en` abre o site em inglês.
+- Para regenerar os CVs em PDF depois de mudar `data.js`: `node tools/gerar-cv.js`

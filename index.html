@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Edita o título e a descrição: é o que aparece na pré-visualização do LinkedIn -->
+  <!-- Título e descrição: é o que aparece na pré-visualização do LinkedIn -->
   <title>Cláudia Rosa — Media Expert</title>
-  <meta name="description" content="Cláudia Rosa, Media Expert na Arena Media Portugal. Estratégias de media integradas, dados e automação." />
+  <meta name="description" content="Cláudia Rosa, Media Expert na Arena Media Portugal. Estratégias de media integradas, dados, automação e AI." />
   <meta property="og:title" content="Cláudia Rosa — Media Expert" />
-  <meta property="og:description" content="Media Expert na Arena Media Portugal. Estratégias de media integradas, do planeamento à análise." />
+  <meta property="og:description" content="Media Expert na Arena Media Portugal. Estratégias de media integradas, do planeamento à análise, com dados, automação e AI." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://claudia-rosa.vercel.app/og.png" />
   <meta property="og:url" content="https://claudia-rosa.vercel.app/" />
@@ -23,19 +23,24 @@
     <div class="wrap nav-inner">
       <a href="#topo" class="logo" id="logo"></a>
       <nav class="nav-links">
-        <a href="#sobre">Sobre</a>
-        <a href="#experiencia">Experiência</a>
-        <a href="#competencias">Competências</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#sobre" data-nav="sobre"></a>
+        <a href="#caso" data-nav="caso"></a>
+        <a href="#experiencia" data-nav="experiencia"></a>
+        <a href="#competencias" data-nav="competencias"></a>
+        <a href="#contacto" data-nav="contacto"></a>
       </nav>
-      <button class="theme" id="theme" aria-label="Mudar tema">◐</button>
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button data-lang="pt">PT</button>
+        <button data-lang="en">EN</button>
+      </div>
+      <button class="theme" id="theme">◐</button>
     </div>
   </header>
 
   <main id="topo">
     <section class="hero wrap">
       <div class="hero-text reveal">
-        <p class="badge" id="badge"><span class="dot"></span>Disponível para novas oportunidades</p>
+        <p class="badge" id="badge"><span class="dot"></span><span data-t="disponivel"></span></p>
         <h1 id="nome"></h1>
         <p class="cargo" id="cargo"></p>
         <p class="frase" id="frase"></p>
@@ -45,7 +50,7 @@
     </section>
 
     <section id="sobre" class="wrap section">
-      <h2 class="reveal">Sobre mim</h2>
+      <h2 class="reveal" data-t="sobre"></h2>
       <div class="sobre-grid">
         <div class="sobre-texto reveal" id="sobre-texto"></div>
         <div class="numeros reveal" id="numeros"></div>
@@ -53,22 +58,27 @@
     </section>
 
     <section id="abordagem" class="wrap section">
-      <h2 class="reveal">Como trabalho</h2>
+      <h2 class="reveal" data-t="abordagem"></h2>
       <div class="abordagem" id="abordagem-lista"></div>
     </section>
 
+    <section id="caso" class="wrap section">
+      <h2 class="reveal" data-t="caso"></h2>
+      <div id="casos"></div>
+    </section>
+
     <section id="experiencia" class="wrap section">
-      <h2 class="reveal">Experiência</h2>
+      <h2 class="reveal" data-t="experiencia"></h2>
       <ol class="timeline" id="timeline"></ol>
     </section>
 
     <section id="competencias" class="wrap section">
-      <h2 class="reveal">Competências</h2>
+      <h2 class="reveal" data-t="competencias"></h2>
       <div class="skills" id="skills"></div>
     </section>
 
     <section id="certificacoes" class="wrap section">
-      <h2 class="reveal">Certificações</h2>
+      <h2 class="reveal" data-t="certificacoes"></h2>
       <div class="certs" id="certs"></div>
     </section>
 
@@ -77,12 +87,12 @@
     </section>
 
     <section id="projetos" class="wrap section">
-      <h2 class="reveal">Projetos académicos</h2>
+      <h2 class="reveal" data-t="projetos"></h2>
       <div class="cards" id="cards"></div>
     </section>
 
     <section id="formacao" class="wrap section">
-      <h2 class="reveal">Formação & Idiomas</h2>
+      <h2 class="reveal" data-t="formacao"></h2>
       <div class="formacao-grid">
         <ul class="formacao" id="formacao-lista"></ul>
         <ul class="idiomas reveal" id="idiomas"></ul>
@@ -90,8 +100,8 @@
     </section>
 
     <section id="contacto" class="wrap section contacto reveal">
-      <h2>Vamos conversar?</h2>
-      <p>Estou sempre aberto a novos desafios, colaborações e uma boa conversa.</p>
+      <h2 data-t="contactoTitulo"></h2>
+      <p data-t="contactoTexto"></p>
       <div class="contact-info" id="contact-info"></div>
       <div class="ctas center" id="ctas2"></div>
     </section>

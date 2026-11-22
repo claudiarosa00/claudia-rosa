@@ -1,0 +1,104 @@
+// Gera os CVs em PDF (PT e EN) a partir de data.js.
+// Uso (na pasta do site):  node tools/gerar-cv.js
+const fs = require("fs");
+const path = require("path");
+const vm = require("vm");
+const { chromium } = require("playwright");
+
+const raiz = path.join(__dirname, "..");
+const ctx = { window: {} };
+vm.runInNewContext(fs.readFileSync(path.join(raiz, "data.js"), "utf8"), ctx);
+const SITE = ctx.window.SITE;
+const C = SITE.comum;
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const foto = "data:image/jpeg;base64," + fs.readFileSync(path.join(raiz, C.foto)).toString("base64");
+
+const rotulos = {
+  pt: { perfil: "Perfil", experiencia: "Experiência profissional", formacao: "Formação", contacto: "Contacto", competencias: "Competências", idiomas: "Idiomas", certificacoes: "Certificações", caso: "Caso em destaque", site: "Portfólio" },
+  en: { perfil: "Profile", experiencia: "Professional experience", formacao: "Education", contacto: "Contact", competencias: "Skills", idiomas: "Languages", certificacoes: "Certifications", caso: "Featured case", site: "Portfolio" },
+};
+
+function html(lang) {
+  const S = SITE[lang], R = rotulos[lang], L = C.links;
+  const caso = (S.casos || [])[0];
+  return `<!doctype html><html lang="${lang}"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+<style>
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Inter, sans-serif; color: #16181d; font-size: 8.8pt; line-height: 1.4; width: 210mm; min-height: 297mm; display: grid; grid-template-columns: 66mm 1fr; }
+aside { background: #eef1fb; padding: 12mm 8mm 10mm 10mm; display: flex; flex-direction: column; gap: 5.5mm; }
+main { padding: 12mm 12mm 10mm 10mm; display: flex; flex-direction: column; gap: 4.5mm; }
+.foto { width: 32mm; height: 32mm; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 1mm; }
+h1 { font-family: Fraunces, serif; font-weight: 600; font-size: 25pt; line-height: 1.05; letter-spacing: -.3px; }
+.cargo { color: #2f5bea; font-weight: 600; font-size: 11pt; margin-top: 1.5mm; }
+h2 { font-size: 8pt; text-transform: uppercase; letter-spacing: .14em; color: #2f5bea; font-weight: 700; margin-bottom: 2.2mm; padding-bottom: 1.2mm; border-bottom: 1px solid #d7ddf2; }
+aside h2 { border-color: #cfd7f3; }
+.contactos div { margin-bottom: 1.6mm; word-break: break-word; }
+.contactos b { display: block; font-size: 7.5pt; color: #5d6370; font-weight: 500; }
+.contactos a { color: inherit; text-decoration: none; }
+.chips { display: flex; flex-wrap: wrap; gap: 1.3mm; }
+.chip { background: #fff; border: 1px solid #d7ddf2; border-radius: 99px; padding: .5mm 2.2mm; font-size: 7.8pt; }
+.grupo { margin-bottom: 2.6mm; } .grupo h3 { font-size: 8pt; font-weight: 600; margin-bottom: .6mm; color: #2f5bea; } .grupo p { color: #353a45; font-size: 8.3pt; }
+ul.simples { list-style: none; } ul.simples li { margin-bottom: 1.2mm; }
+ul.simples span { display: block; color: #5d6370; font-size: 8pt; }
+.perfil { color: #353a45; }
+.job { margin-bottom: 2.8mm; }
+.job .top { display: flex; justify-content: space-between; gap: 4mm; align-items: baseline; }
+.job h3 { font-size: 10.3pt; font-weight: 600; }
+.job .emp { color: #2f5bea; font-weight: 600; }
+.job .per { color: #5d6370; font-size: 8.3pt; white-space: nowrap; }
+.job p { color: #353a45; margin-top: .8mm; }
+.job ul { margin: 1.2mm 0 0 4mm; color: #353a45; } .job li { margin-bottom: .6mm; }
+.caso { background: #f6f7fb; border-left: 3px solid #2f5bea; border-radius: 0 3mm 3mm 0; padding: 3mm 4mm; }
+.caso h3 { font-size: 10pt; font-weight: 600; margin-bottom: 1mm; }
+.caso p { color: #353a45; margin-bottom: .8mm; } .caso b { color: #16181d; }
+.edu { display: flex; justify-content: space-between; gap: 4mm; margin-bottom: 1.8mm; }
+.edu span { color: #5d6370; } .edu .per { font-size: 8.3pt; white-space: nowrap; }
+</style></head><body>
+<aside>
+  <img class="foto" src="${foto}" alt="">
+  <section class="contactos"><h2>${R.contacto}</h2>
+    ${L.email ? `<div><b>Email</b><a href="mailto:${esc(L.email)}">${esc(L.email)}</a></div>` : ""}
+    ${L.telefone ? `<div><b>${lang === "pt" ? "Telefone" : "Phone"}</b>${esc(L.telefone)}</div>` : ""}
+    <div><b>${lang === "pt" ? "Localização" : "Location"}</b>${esc(S.localizacao)}</div>
+    <div><b>LinkedIn</b><a href="${esc(L.linkedin)}">linkedin.com/in/cláudia-rosa</a></div>
+    <div><b>${R.site}</b><a href="https://claudia-rosa.vercel.app${lang === "en" ? "/?lang=en" : ""}">claudia-rosa.vercel.app</a></div>
+  </section>
+  <section><h2>${R.competencias}</h2>
+    ${S.competencias.map((g) => `<div class="grupo"><h3>${esc(g.grupo)}</h3><p>${g.itens.map(esc).join(" · ")}</p></div>`).join("")}
+  </section>
+  <section><h2>${R.certificacoes}</h2><ul class="simples">
+    ${(S.certificacoes || []).map((c) => `<li>${esc(c.nome)}<span>${esc(c.emissor)} · ${esc(c.data)}</span></li>`).join("")}
+  </ul></section>
+  <section><h2>${R.idiomas}</h2><ul class="simples">${S.idiomas.map((i) => `<li>${esc(i)}</li>`).join("")}</ul></section>
+</aside>
+<main>
+  <header><h1>${esc(C.nome)}</h1><p class="cargo">${esc(S.cargo)}</p></header>
+  <section><h2>${R.perfil}</h2><p class="perfil">${esc(S.resumoCV)}</p></section>
+  <section><h2>${R.experiencia}</h2>
+    ${S.experiencia.map((e) => `<div class="job"><div class="top"><h3>${esc(e.cargo)} · <span class="emp">${esc(e.empresa)}</span></h3><span class="per">${esc(e.periodo)}</span></div>
+      <p>${esc(e.descricao)}</p>${e.destaques.length ? `<ul>${e.destaques.map((d) => `<li>${esc(d)}</li>`).join("")}</ul>` : ""}</div>`).join("")}
+  </section>
+  ${caso ? `<section><h2>${R.caso}</h2><div class="caso"><h3>${esc(caso.titulo)}</h3>
+    <p><b>${esc(S.ui.problema)}:</b> ${esc(caso.problema)}</p>
+    <p><b>${esc(S.ui.solucao)}:</b> ${esc(caso.solucao)}</p>
+    <p><b>${esc(S.ui.resultado)}:</b> ${esc(caso.resultado)}</p></div></section>` : ""}
+  <section><h2>${R.formacao}</h2>
+    ${S.formacao.map((f) => `<div class="edu"><div><b>${esc(f.curso)}</b><br><span>${esc(f.instituicao)}</span></div><span class="per">${esc(f.periodo)}</span></div>`).join("")}
+  </section>
+</main></body></html>`;
+}
+
+(async () => {
+  const browser = await chromium.launch();
+  const page = await browser.newPage();
+  for (const lang of ["pt", "en"]) {
+    await page.setContent(html(lang), { waitUntil: "networkidle" });
+    const altura = await page.evaluate(() => document.body.scrollHeight);
+    const ficheiro = path.join(raiz, SITE[lang].cv);
+    await page.pdf({ path: ficheiro, format: "A4", printBackground: true });
+    console.log(lang, "->", path.basename(ficheiro), altura > 1123 ? "(AVISO: passa de 1 página)" : "(1 página)");
+  }
+  await browser.close();
+})();

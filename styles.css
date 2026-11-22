@@ -203,6 +203,29 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-co
 .contact-info a:hover { color: var(--accent); }
 .contact-info svg { width: 18px; height: 18px; color: var(--accent); }
 
+/* IDIOMA */
+.lang { display: flex; border: 1px solid var(--line); border-radius: 999px; padding: 3px; }
+.nav-links + .lang { margin-left: 0; }
+.lang button {
+  background: none; border: 0; color: var(--muted); font: 600 .8rem "Inter", sans-serif;
+  padding: 5px 10px; border-radius: 999px; cursor: pointer;
+}
+.lang button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+[hidden] { display: none !important; }
+
+/* CASO */
+.caso { background: var(--surface); border: 1px solid var(--line); border-radius: 24px; padding: 36px; display: grid; gap: 28px; }
+.caso-top h3 { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: clamp(1.35rem, 2.6vw, 1.7rem); line-height: 1.25; }
+.caso-top p { color: var(--muted); margin-top: 6px; }
+.caso-metricas { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+.caso-metricas div { background: var(--accent-soft); border-radius: 14px; padding: 16px 18px; }
+.caso-metricas b { display: block; font-family: "Fraunces", serif; font-size: 1.6rem; color: var(--accent); line-height: 1.2; }
+.caso-metricas span { color: var(--muted); font-size: .92rem; }
+.caso-passos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.passo { font: 600 .78rem "Inter", sans-serif; color: var(--accent); letter-spacing: .1em; }
+.caso-passos h4 { font-size: 1.05rem; margin: 4px 0 8px; }
+.caso-passos p { color: var(--muted); }
+
 /* ANIMAÇÃO */
 .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
 .reveal.visible { opacity: 1; transform: none; }
@@ -214,7 +237,9 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-co
 /* MOBILE */
 @media (max-width: 760px) {
   .nav-links { display: none; }
-  .theme { margin-left: auto; }
+  .lang { margin-left: auto; }
+  .caso { padding: 24px 20px; }
+  .caso-passos { grid-template-columns: 1fr; gap: 20px; }
   .hero { grid-template-columns: 1fr; padding-top: 48px; gap: 32px; }
   .avatar { order: -1; max-width: 160px; justify-self: start; font-size: 3rem; }
   .sobre-grid, .formacao-grid { grid-template-columns: 1fr; gap: 24px; }
