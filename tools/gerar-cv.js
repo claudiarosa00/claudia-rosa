@@ -14,8 +14,8 @@ const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&l
 const foto = "data:image/jpeg;base64," + fs.readFileSync(path.join(raiz, C.foto)).toString("base64");
 
 const rotulos = {
-  pt: { perfil: "Perfil", experiencia: "Experiência profissional", formacao: "Formação", contacto: "Contacto", competencias: "Competências", idiomas: "Idiomas", certificacoes: "Certificações", caso: "Caso em destaque", site: "Portfólio" },
-  en: { perfil: "Profile", experiencia: "Professional experience", formacao: "Education", contacto: "Contact", competencias: "Skills", idiomas: "Languages", certificacoes: "Certifications", caso: "Featured case", site: "Portfolio" },
+  pt: { perfil: "Perfil", experiencia: "Experiência profissional", formacao: "Formação", contacto: "Contacto", competencias: "Competências", ferramentas: "Ferramentas", idiomas: "Idiomas", certificacoes: "Certificações", caso: "Caso em destaque", site: "Portfólio" },
+  en: { perfil: "Profile", experiencia: "Professional experience", formacao: "Education", contacto: "Contact", competencias: "Skills", ferramentas: "Tools", idiomas: "Languages", certificacoes: "Certifications", caso: "Featured case", site: "Portfolio" },
 };
 
 // Certificações do mesmo emissor (ex.: DataCamp) ficam agrupadas numa linha no CV
@@ -81,6 +81,9 @@ ul.simples span { display: block; color: #5d6370; font-size: 8pt; }
   <section><h2>${R.competencias}</h2>
     ${S.competencias.map((g) => `<div class="grupo"><h3>${esc(g.grupo)}</h3><p>${g.itens.map(esc).join(" · ")}</p></div>`).join("")}
   </section>
+  ${(S.ferramentas || []).length ? `<section><h2>${R.ferramentas}</h2>
+    ${S.ferramentas.map((g) => `<div class="grupo"><h3>${esc(g.grupo)}</h3><p>${g.itens.map(esc).join(" · ")}</p></div>`).join("")}
+  </section>` : ""}
   <section><h2>${R.idiomas}</h2><ul class="simples">${S.idiomas.map((i) => `<li>${esc(i)}</li>`).join("")}</ul></section>
 </aside>
 <main>

@@ -91,6 +91,14 @@
         <div class="chips">${g.itens.map((i) => `<span class="chip">${esc(i)}</span>`).join("")}</div>
       </div>`).join("");
 
+    // Ferramentas
+    const F = S.ferramentas || [];
+    $("ferramentas-lista").innerHTML = F.map((g) => `
+      <div class="skill-group reveal"><h3>${esc(g.grupo)}</h3>
+        <div class="chips">${g.itens.map((i) => `<span class="chip tool">${esc(i)}</span>`).join("")}</div>
+      </div>`).join("");
+    show("ferramentas", F.length);
+
     // Certificações
     const CE = S.certificacoes || [];
     $("certs").innerHTML = CE.map((c) => {

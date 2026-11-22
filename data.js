@@ -32,6 +32,7 @@ window.SITE = {
       resultado: "O resultado",
       experiencia: "Experiência",
       competencias: "Competências",
+      ferramentas: "Ferramentas",
       certificacoes: "Certificações",
       projetos: "Projetos",
       formacao: "Formação & Idiomas",
@@ -103,9 +104,15 @@ window.SITE = {
     ],
 
     competencias: [
-      { grupo: "Media", itens: ["Estratégia de media", "Planeamento", "Compra de media", "Meta Ads", "TikTok Ads", "LinkedIn Ads", "Google Ads", "Programmatic", "Yumi (Marktest)", "TV · Rádio · OOH · Imprensa", "Reporting e otimização"] },
-      { grupo: "Dados, Automação & AI", itens: ["Inteligência Artificial (AI)", "ChatGPT", "Claude", "GitHub Copilot", "Criação de ferramentas com AI", "GitHub", "Google Analytics", "Data-Driven Marketing", "Digital Analytics", "Data Science for Marketing", "Machine Learning", "Automação de processos"] },
+      { grupo: "Media", itens: ["Estratégia de media", "Planeamento", "Compra de media", "Paid Social", "Programmatic", "TV · Rádio · OOH · Imprensa", "Reporting e otimização"] },
+      { grupo: "Dados, Automação & AI", itens: ["Inteligência Artificial (AI)", "Criação de ferramentas com AI", "Automação de processos", "Data-Driven Marketing", "Digital Analytics", "Data Science for Marketing", "Machine Learning"] },
       { grupo: "Pessoais", itens: ["Problem-solving", "Pensamento crítico", "Capacidade de organização", "Proatividade", "Comunicação", "Trabalho em equipa"] },
+    ],
+
+    ferramentas: [
+      { grupo: "Publicidade", itens: ["Meta Ads", "TikTok Ads", "LinkedIn Ads", "Google Ads"] },
+      { grupo: "Análise & Planeamento", itens: ["Google Analytics", "Yumi (Marktest)"] },
+      { grupo: "AI & Produtividade", itens: ["ChatGPT", "Claude", "GitHub Copilot", "GitHub", "Canva"] },
     ],
 
     certificacoes: [
@@ -153,6 +160,7 @@ window.SITE = {
       resultado: "The result",
       experiencia: "Experience",
       competencias: "Skills",
+      ferramentas: "Tools",
       certificacoes: "Certifications",
       projetos: "Projects",
       formacao: "Education & Languages",
@@ -224,9 +232,15 @@ window.SITE = {
     ],
 
     competencias: [
-      { grupo: "Media", itens: ["Media strategy", "Planning", "Media buying", "Meta Ads", "TikTok Ads", "LinkedIn Ads", "Google Ads", "Programmatic", "Yumi (Marktest)", "TV · Radio · OOH · Print", "Reporting & optimisation"] },
-      { grupo: "Data, Automation & AI", itens: ["Artificial Intelligence (AI)", "ChatGPT", "Claude", "GitHub Copilot", "AI-assisted tool building", "GitHub", "Google Analytics", "Data-Driven Marketing", "Digital Analytics", "Data Science for Marketing", "Machine Learning", "Process automation"] },
+      { grupo: "Media", itens: ["Media strategy", "Planning", "Media buying", "Paid Social", "Programmatic", "TV · Radio · OOH · Print", "Reporting & optimisation"] },
+      { grupo: "Data, Automation & AI", itens: ["Artificial Intelligence (AI)", "AI-assisted tool building", "Process automation", "Data-Driven Marketing", "Digital Analytics", "Data Science for Marketing", "Machine Learning"] },
       { grupo: "Personal", itens: ["Problem-solving", "Critical thinking", "Organisation", "Proactivity", "Communication", "Teamwork"] },
+    ],
+
+    ferramentas: [
+      { grupo: "Advertising", itens: ["Meta Ads", "TikTok Ads", "LinkedIn Ads", "Google Ads"] },
+      { grupo: "Analytics & Planning", itens: ["Google Analytics", "Yumi (Marktest)"] },
+      { grupo: "AI & Productivity", itens: ["ChatGPT", "Claude", "GitHub Copilot", "GitHub", "Canva"] },
     ],
 
     certificacoes: [
