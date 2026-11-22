@@ -61,7 +61,7 @@ window.SITE = {
       "No digital, tenho experiência prática em Paid Social (Meta, TikTok e LinkedIn), compra direta de media e Google, em estreita colaboração com as equipas de Programmatic e AdOps. No offline, trabalho com OOH, rádio, imprensa e TV.",
       "Procuro constantemente formas de tornar os processos mais simples e eficientes: melhorei fluxos de reporting e planeamento, criei templates, automatizei tarefas repetitivas e estruturei melhor a informação das campanhas.",
       "O que mais me motiva é identificar o que não está a funcionar, muitas vezes antes de alguém dar por isso, e encontrar uma solução prática e escalável. Gosto de questionar a forma como as coisas sempre foram feitas.",
-      "Trabalho muito com inteligência artificial e gosto mesmo disso: uso-a no dia a dia para analisar informação, automatizar tarefas e encontrar novas formas de trabalhar. Interessa-me sobretudo a interseção entre media, dados e AI, e como podem levar a decisões mais inteligentes e estratégias de media mais fortes.",
+      "Trabalho muito com inteligência artificial e gosto mesmo disso: uso ChatGPT, Claude e GitHub Copilot no dia a dia para analisar informação, automatizar tarefas e criar ferramentas que simplificam o trabalho da equipa, mesmo sem ser programadora. Interessa-me sobretudo a interseção entre media, dados e AI, e como podem levar a decisões mais inteligentes e estratégias de media mais fortes.",
     ],
 
     numeros: [], // vazio = os cartões de números não aparecem
@@ -78,7 +78,7 @@ window.SITE = {
         descricao:
           "Planeamento, compra e gestão de campanhas multicanal em TV, rádio, digital, outdoor e imprensa, desenvolvendo estratégias integradas em conjunto com as equipas de AdOps, Programmatic, Conteúdo e Research.",
         destaques: [
-          "Criei, com a ajuda de AI, uma ferramenta interna hoje usada por muitas pessoas na empresa, que reduziu uma tarefa repetitiva para cerca de 2 minutos",
+          "Criei, com a ajuda de AI (ChatGPT, Claude e Copilot), uma ferramenta interna hoje usada por muitas pessoas na empresa, que reduziu uma tarefa repetitiva para cerca de 2 minutos",
           "Compra direta de media em Paid Social (Meta, TikTok, LinkedIn) e Google",
           "Melhoria dos fluxos de reporting e planeamento, com templates e automação de tarefas repetitivas",
           "Clientes de mobilidade, energia, saúde, automóvel, luxo e bebidas espirituosas",
@@ -104,7 +104,7 @@ window.SITE = {
 
     competencias: [
       { grupo: "Media", itens: ["Estratégia de media", "Planeamento", "Compra de media", "Paid Social", "Google Ads", "Programmatic", "TV · Rádio · OOH · Imprensa", "Reporting e otimização"] },
-      { grupo: "Dados, Automação & AI", itens: ["Inteligência Artificial (AI)", "Python", "pandas", "SQL", "Power BI", "Data-Driven Marketing", "Digital Analytics", "Data Science for Marketing", "Machine Learning", "Automação de processos"] },
+      { grupo: "Dados, Automação & AI", itens: ["Inteligência Artificial (AI)", "ChatGPT", "Claude", "GitHub Copilot", "Criação de ferramentas com AI", "GitHub", "SQL", "Power BI", "Data-Driven Marketing", "Digital Analytics", "Data Science for Marketing", "Machine Learning", "Automação de processos"] },
       { grupo: "Pessoais", itens: ["Problem-solving", "Pensamento crítico", "Capacidade de organização", "Proatividade", "Comunicação", "Trabalho em equipa"] },
     ],
 
@@ -182,7 +182,7 @@ window.SITE = {
       "In digital, I have hands-on experience in Paid Social (Meta, TikTok and LinkedIn), direct media buying and Google, working closely with Programmatic and AdOps teams. Offline, I work with OOH, radio, print and TV.",
       "I'm always looking for ways to make processes simpler and more efficient: I've improved reporting and planning workflows, built templates, automated repetitive tasks and introduced better ways of structuring campaign data.",
       "What drives me most is spotting what isn't working, often before anyone else notices, and finding a practical, scalable solution. I like to challenge the way things have always been done.",
-      "I work a lot with artificial intelligence and genuinely enjoy it: I use it every day to analyse information, automate tasks and find new ways of working. I'm especially interested in the intersection of media, data and AI, and how they can lead to smarter decisions and stronger media strategies.",
+      "I work a lot with artificial intelligence and genuinely enjoy it: I use ChatGPT, Claude and GitHub Copilot every day to analyse information, automate tasks and build tools that make the team's work easier, even though I'm not a developer. I'm especially interested in the intersection of media, data and AI, and how they can lead to smarter decisions and stronger media strategies.",
     ],
 
     numeros: [], // vazio = os cartões de números não aparecem
@@ -199,7 +199,7 @@ window.SITE = {
         descricao:
           "I plan, buy and manage multi-channel media campaigns across TV, radio, digital, outdoor and print, developing integrated strategies together with the AdOps, Programmatic, Content and Research teams.",
         destaques: [
-          "Built, with the help of AI, an internal tool now used by many people across the company, cutting a repetitive task down to about 2 minutes",
+          "Built, with the help of AI (ChatGPT, Claude and Copilot), an internal tool now used by many people across the company, cutting a repetitive task down to about 2 minutes",
           "Direct media buying in Paid Social (Meta, TikTok, LinkedIn) and Google",
           "Improved reporting and planning workflows with templates and automation of repetitive tasks",
           "Clients in mobility, energy, healthcare, automotive, luxury and spirits",
@@ -225,7 +225,7 @@ window.SITE = {
 
     competencias: [
       { grupo: "Media", itens: ["Media strategy", "Planning", "Media buying", "Paid Social", "Google Ads", "Programmatic", "TV · Radio · OOH · Print", "Reporting & optimisation"] },
-      { grupo: "Data, Automation & AI", itens: ["Artificial Intelligence (AI)", "Python", "pandas", "SQL", "Power BI", "Data-Driven Marketing", "Digital Analytics", "Data Science for Marketing", "Machine Learning", "Process automation"] },
+      { grupo: "Data, Automation & AI", itens: ["Artificial Intelligence (AI)", "ChatGPT", "Claude", "GitHub Copilot", "AI-assisted tool building", "GitHub", "SQL", "Power BI", "Data-Driven Marketing", "Digital Analytics", "Data Science for Marketing", "Machine Learning", "Process automation"] },
       { grupo: "Personal", itens: ["Problem-solving", "Critical thinking", "Organisation", "Proactivity", "Communication", "Teamwork"] },
     ],
 
