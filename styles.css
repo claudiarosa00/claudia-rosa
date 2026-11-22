@@ -252,3 +252,71 @@ a.cert:hover { transform: translateY(-2px); box-shadow: var(--shadow); border-co
   .contacto { margin-left: 16px; margin-right: 16px; }
   .wrap { padding: 0 16px; }
 }
+
+/* =====================================================================
+   COR — paleta azul · violeta · coral
+   ===================================================================== */
+:root {
+  --violet: #7b5cf0; --violet-soft: #f0ebff;
+  --coral: #e9604a; --coral-soft: #ffece7;
+  --grad: linear-gradient(120deg, #2f5bea 0%, #7b5cf0 55%, #e9604a 100%);
+  --grad-btn: linear-gradient(120deg, #2f5bea, #7b5cf0);
+}
+:root[data-theme="dark"] { --violet: #a58bff; --violet-soft: #241e3d; --coral: #ff8a75; --coral-soft: #36201c; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --violet: #a58bff; --violet-soft: #241e3d; --coral: #ff8a75; --coral-soft: #36201c; }
+}
+
+/* fundo com manchas de cor suaves no topo */
+body {
+  background:
+    radial-gradient(55% 520px at 95% 0, var(--violet-soft), transparent 70%) no-repeat,
+    radial-gradient(45% 460px at 0 160px, var(--accent-soft), transparent 70%) no-repeat,
+    radial-gradient(35% 360px at 55% 640px, var(--coral-soft), transparent 70%) no-repeat,
+    var(--bg);
+}
+
+.logo { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.cargo { background: var(--grad-btn); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.btn.primary { background: var(--grad-btn); border-color: transparent; }
+.lang button[aria-pressed="true"] { background: var(--grad-btn); }
+
+.avatar { padding: 7px; background: var(--grad); box-shadow: 0 24px 60px color-mix(in srgb, var(--violet) 28%, transparent); }
+.avatar img { border-radius: inherit; }
+
+/* traço colorido por baixo dos títulos */
+.section h2::after {
+  content: ""; display: block; width: 56px; height: 4px; border-radius: 4px;
+  background: var(--grad); margin-top: 12px;
+}
+
+/* timeline */
+.timeline { border-left: 0; background: linear-gradient(var(--accent), var(--violet), var(--coral)) 0 0 / 2px 100% no-repeat; }
+.timeline > li:nth-child(3n+2)::before { border-color: var(--violet); }
+.timeline > li:nth-child(3n+3)::before { border-color: var(--coral); }
+.timeline > li:nth-child(3n+2) .empresa { color: var(--violet); }
+.timeline > li:nth-child(3n+3) .empresa { color: var(--coral); }
+
+/* cada grupo de competências/ferramentas com a sua cor */
+.skills > .skill-group { --c: var(--accent); --cs: var(--accent-soft); border-top: 4px solid var(--c); }
+.skills > .skill-group:nth-child(3n+2) { --c: var(--violet); --cs: var(--violet-soft); }
+.skills > .skill-group:nth-child(3n+3) { --c: var(--coral); --cs: var(--coral-soft); }
+.skills > .skill-group h3 { color: var(--c); }
+.skills > .skill-group .chip { background: var(--cs); color: var(--c); }
+.skills > .skill-group .chip.tool { background: var(--surface); color: var(--text); border-color: color-mix(in srgb, var(--c) 35%, var(--line)); }
+
+/* certificações */
+.certs > .cert:nth-child(3n+2) .cert-ico { background: var(--violet-soft); color: var(--violet); }
+.certs > .cert:nth-child(3n+3) .cert-ico { background: var(--coral-soft); color: var(--coral); }
+
+/* recomendação */
+.quote { background: var(--violet-soft); border-left-color: var(--violet); border-radius: 0 20px 20px 0; padding: 28px 32px; }
+
+/* contacto */
+.contacto { background: var(--grad); border: 0; color: #fff; }
+.contacto h2::after { background: #fff; margin-left: auto; margin-right: auto; opacity: .8; }
+.contacto p { color: rgba(255,255,255,.88); }
+.contact-info a, .contact-info a:hover { color: #fff; }
+.contact-info svg { color: #fff; }
+.contacto .btn { background: rgba(255,255,255,.14); color: #fff; border-color: rgba(255,255,255,.38); }
+.contacto .btn.primary { background: #fff; color: #2f5bea; }
