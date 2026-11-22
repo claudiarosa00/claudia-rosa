@@ -64,7 +64,6 @@ ul.simples span { display: block; color: #5d6370; font-size: 8pt; }
 .job h3 { font-size: 10.3pt; font-weight: 600; }
 .job .emp { color: #2f5bea; font-weight: 600; text-decoration: none; }
 .job .emp { white-space: nowrap; }
-.job h3 { padding-left: 7.2mm; text-indent: -7.2mm; }
 .job .per { color: #5d6370; font-size: 8.3pt; white-space: nowrap; }
 .job p { color: #353a45; margin-top: .8mm; }
 .job ul { margin: 1.2mm 0 0 4mm; color: #353a45; } .job li { margin-bottom: .6mm; }
@@ -97,7 +96,7 @@ ul.simples span { display: block; color: #5d6370; font-size: 8pt; }
   <header><h1>${esc(C.nome)}</h1><p class="cargo">${esc(S.cargo)}</p></header>
   <section><h2>${R.perfil}</h2><p class="perfil">${esc(S.resumoCV)}</p></section>
   <section><h2>${R.experiencia}</h2>
-    ${S.experiencia.map((e) => `<div class="job"><div class="top"><h3>${e.logo ? `<img class="lg" src="${img(e.logo)}">` : ""}${esc(e.cargo)} · ${e.linkedin ? `<a class="emp" href="${esc(e.linkedin)}">${esc(e.empresa)}</a>` : `<span class="emp">${esc(e.empresa)}</span>`}</h3><span class="per">${esc(e.periodo)}</span></div>
+    ${S.experiencia.map((e) => `<div class="job"><div class="top"><h3>${esc(e.cargo)} · ${e.linkedin ? `<a class="emp" href="${esc(e.linkedin)}">${esc(e.empresa)}</a>` : `<span class="emp">${esc(e.empresa)}</span>`}</h3><span class="per">${esc(e.periodo)}</span></div>
       <p>${esc(e.descricao)}</p>${e.destaques.length ? `<ul>${e.destaques.map((d) => `<li>${esc(d)}</li>`).join("")}</ul>` : ""}</div>`).join("")}
   </section>
   ${caso ? `<section><h2>${R.caso}</h2><div class="caso"><h3>${esc(caso.titulo)}</h3>
@@ -105,7 +104,7 @@ ul.simples span { display: block; color: #5d6370; font-size: 8pt; }
     <p><b>${esc(S.ui.solucao)}:</b> ${esc(caso.solucao)}</p>
     <p><b>${esc(S.ui.resultado)}:</b> ${esc(caso.resultado)}</p></div></section>` : ""}
   <section><h2>${R.formacao}</h2>
-    ${S.formacao.map((f) => `<div class="edu"><div class="edu-l">${f.logo ? `<img class="lg" src="${img(f.logo)}">` : ""}<div><b>${esc(f.curso)}</b><br><span>${f.linkedin ? `<a href="${esc(f.linkedin)}" style="color:inherit;text-decoration:none">${esc(f.instituicao)}</a>` : esc(f.instituicao)}</span></div></div><span class="per">${esc(f.periodo)}</span></div>`).join("")}
+    ${S.formacao.map((f) => `<div class="edu"><div class="edu-l"><div><b>${esc(f.curso)}</b><br><span>${f.linkedin ? `<a href="${esc(f.linkedin)}" style="color:inherit;text-decoration:none">${esc(f.instituicao)}</a>` : esc(f.instituicao)}</span></div></div><span class="per">${esc(f.periodo)}</span></div>`).join("")}
   </section>
   <section><h2>${R.certificacoes}</h2><ul class="simples certs">
     ${certsCV(S.certificacoes || [], X.cursos, lang)}
