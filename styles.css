@@ -138,8 +138,6 @@ h2 {
 .timeline ul li::before { display: none; }
 
 /* SKILLS */
-#ferramentas-lista { grid-template-columns: repeat(2, 1fr); }
-@media (max-width: 760px) { #ferramentas-lista { grid-template-columns: 1fr; } }
 .chip.tool { background: var(--surface); color: var(--text); border: 1px solid var(--line); }
 .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
 .skill-group { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; }

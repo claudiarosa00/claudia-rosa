@@ -110,8 +110,7 @@ window.SITE = {
     ],
 
     ferramentas: [
-      { grupo: "Publicidade", itens: ["Meta Ads", "TikTok Ads", "LinkedIn Ads", "Google Ads"] },
-      { grupo: "Análise & Planeamento", itens: ["Google Analytics", "Yumi (Marktest)"] },
+      { grupo: "Media & Analytics", itens: ["Meta Ads", "TikTok Ads", "LinkedIn Ads", "Google Ads", "Google Analytics", "Yumi (Marktest)"] },
       { grupo: "AI", itens: ["ChatGPT", "Claude", "Microsoft Copilot", "GitHub"] },
       { grupo: "Produtividade & Colaboração", itens: ["Excel", "Google Sheets", "Word", "PowerPoint", "Google Slides", "Canva", "Asana", "ClickUp", "Microsoft Teams"] },
     ],
@@ -239,8 +238,7 @@ window.SITE = {
     ],
 
     ferramentas: [
-      { grupo: "Advertising", itens: ["Meta Ads", "TikTok Ads", "LinkedIn Ads", "Google Ads"] },
-      { grupo: "Analytics & Planning", itens: ["Google Analytics", "Yumi (Marktest)"] },
+      { grupo: "Media & Analytics", itens: ["Meta Ads", "TikTok Ads", "LinkedIn Ads", "Google Ads", "Google Analytics", "Yumi (Marktest)"] },
       { grupo: "AI", itens: ["ChatGPT", "Claude", "Microsoft Copilot", "GitHub"] },
       { grupo: "Productivity & Collaboration", itens: ["Excel", "Google Sheets", "Word", "PowerPoint", "Google Slides", "Canva", "Asana", "ClickUp", "Microsoft Teams"] },
     ],
