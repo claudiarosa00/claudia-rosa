@@ -136,7 +136,7 @@ window.SITE = {
 
     formacao: [
       { curso: "Mestrado em Data-Driven Marketing", instituicao: "NOVA IMS · 16 valores", periodo: "2023 — 2025", logo: "logos/nova-ims.png", linkedin: "https://www.linkedin.com/school/nova-ims-information-management-school/" },
-      { curso: "Licenciatura em Marketing", instituicao: "IPAM · 16 valores", periodo: "2019 — 2022", logo: "logos/ipam.png", linkedin: "" /* falta o link do IPAM */ },
+      { curso: "Licenciatura em Marketing", instituicao: "IPAM · 16 valores", periodo: "2019 — 2022", logo: "logos/ipam.png", linkedin: "https://www.linkedin.com/school/ipam/" },
     ],
 
     idiomas: ["Português (nativo)", "Inglês (avançado)"],
@@ -261,7 +261,7 @@ window.SITE = {
 
     formacao: [
       { curso: "Master's in Data-Driven Marketing", instituicao: "NOVA IMS · Grade 16/20", periodo: "2023 — 2025", logo: "logos/nova-ims.png", linkedin: "https://www.linkedin.com/school/nova-ims-information-management-school/" },
-      { curso: "Bachelor's in Marketing", instituicao: "IPAM · Grade 16/20", periodo: "2019 — 2022", logo: "logos/ipam.png", linkedin: "" /* falta o link do IPAM */ },
+      { curso: "Bachelor's in Marketing", instituicao: "IPAM · Grade 16/20", periodo: "2019 — 2022", logo: "logos/ipam.png", linkedin: "https://www.linkedin.com/school/ipam/" },
     ],
 
     idiomas: ["Portuguese (native)", "English (advanced)"],
