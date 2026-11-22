@@ -53,11 +53,11 @@ window.SITE = {
     cv: "cv-claudia-rosa.pdf",
 
     frase:
-      "Estratégias de media integradas, com olho para detetar problemas e vontade de os resolver, usando dados, automação e AI.",
+      "Estratégias de media integradas, com foco em melhorar processos e encontrar soluções práticas, usando dados, automação e AI.",
 
     // ---------- Versão resumida usada só no CV em PDF ----------
     resumoCV:
-      "Media Expert com 4 anos de experiência em estratégias de media integradas, digitais e offline, do planeamento à compra, otimização e análise. Destaco-me por detetar problemas e resolvê-los com dados, automação e AI.",
+      "Media Expert com 4 anos de experiência em estratégias de media integradas, digitais e offline, do planeamento à compra, otimização e análise. Gosto de encontrar formas de melhorar processos com dados, automação e AI.",
     cvExtra: {
       experiencia: [
         {
@@ -85,7 +85,7 @@ window.SITE = {
 
     sobre: [
       "Sou **Media Expert** com 4 anos de experiência em estratégias de media integradas, digitais e offline. Acompanho todo o ciclo das campanhas, da estratégia e planeamento à compra, otimização e análise, com experiência prática em **Meta, TikTok, LinkedIn e Google**, e em TV, rádio, OOH e imprensa.",
-      "O que mais me motiva é **detetar o que não está a funcionar e encontrar uma solução prática**, muitas vezes antes de alguém dar por isso. Gosto de questionar a forma como as coisas sempre foram feitas: melhorei fluxos de reporting e planeamento, criei templates e automatizei tarefas repetitivas.",
+      "O que mais me motiva é **encontrar formas de melhorar o que já existe e transformar problemas em soluções práticas** para a equipa. Gosto de olhar para os processos com outros olhos: melhorei fluxos de reporting e planeamento, criei templates e automatizei tarefas repetitivas.",
       "Trabalho todos os dias com **AI (ChatGPT, Claude e Microsoft Copilot)** para analisar informação, automatizar tarefas e criar ferramentas que simplificam o trabalho da equipa, mesmo sem ser programadora. Interessa-me sobretudo a interseção entre media, dados e AI.",
     ],
 
@@ -203,11 +203,11 @@ window.SITE = {
     cv: "cv-claudia-rosa-en.pdf",
 
     frase:
-      "Integrated media strategies, with an eye for spotting problems and the drive to solve them, using data, automation and AI.",
+      "Integrated media strategies, focused on improving processes and finding practical solutions, using data, automation and AI.",
 
     // ---------- Shorter version used only in the PDF CV ----------
     resumoCV:
-      "Media Expert with 4 years of experience in integrated media strategies across digital and offline, from planning and buying to optimisation and analysis. I stand out for spotting problems and solving them with data, automation and AI.",
+      "Media Expert with 4 years of experience in integrated media strategies across digital and offline, from planning and buying to optimisation and analysis. I enjoy finding ways to improve processes with data, automation and AI.",
     cvExtra: {
       experiencia: [
         {
@@ -235,7 +235,7 @@ window.SITE = {
 
     sobre: [
       "I'm a **Media Expert** with 4 years of experience in integrated media strategies across digital and offline channels. I cover the full campaign lifecycle, from strategy and planning to buying, optimisation and analysis, with hands-on experience in **Meta, TikTok, LinkedIn and Google**, as well as TV, radio, OOH and print.",
-      "What drives me most is **spotting what isn't working and finding a practical solution**, often before anyone else notices. I like to challenge the way things have always been done: I've improved reporting and planning workflows, built templates and automated repetitive tasks.",
+      "What drives me most is **finding ways to improve what already exists and turning problems into practical solutions** for the team. I like to look at processes with fresh eyes: I've improved reporting and planning workflows, built templates and automated repetitive tasks.",
       "I work with **AI (ChatGPT, Claude and Microsoft Copilot)** every day to analyse information, automate tasks and build tools that make the team's work easier, even though I'm not a developer. I'm especially interested in the intersection of media, data and AI.",
     ],
 
