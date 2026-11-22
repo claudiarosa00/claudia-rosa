@@ -41,6 +41,7 @@ window.SITE = {
       telefone: "Telefone",
       cv: "Descarregar CV",
       verProjeto: "Ver projeto →",
+      verCert: "Ver certificado",
       traduzido: "",
       tema: "Mudar tema",
     },
@@ -70,30 +71,9 @@ window.SITE = {
       { valor: "5+", legenda: "indústrias, de energia a luxo" },
     ],
 
-    abordagem: [
-      { icone: "🔍", titulo: "Detetar problemas", texto: "Tenho facilidade em perceber onde um processo, uma campanha ou um fluxo de trabalho está a falhar, e não espero que alguém me peça para olhar para isso." },
-      { icone: "💡", titulo: "Criar soluções", texto: "Transformo esses problemas em soluções práticas: templates, processos mais simples e tarefas automatizadas que poupam tempo à equipa." },
-      { icone: "✨", titulo: "Trabalhar com AI", texto: "Uso inteligência artificial no dia a dia para analisar dados, automatizar trabalho repetitivo e explorar novas formas de planear e otimizar media." },
-    ],
+    abordagem: [], // vazio = a secção "Como trabalho" não aparece
 
-    casos: [
-      {
-        titulo: "Uma ferramenta interna para um processo com 20 anos",
-        resumo: "Como transformei uma tarefa manual e repetitiva numa ferramenta usada por muitas pessoas na empresa.",
-        problema:
-          "Uma tarefa repetitiva era feita da mesma forma há cerca de 20 anos. Era manual, sujeita a erros e podia demorar bastante tempo quando era preciso gerar um documento grande. Nunca tinha sido resolvida porque dependia de uma grande base de dados que ninguém tinha construído.",
-        solucao:
-          "Tomei a iniciativa de criar essa base de dados e acelerei a sua construção. Depois, com a ajuda de AI, desenvolvi uma ferramenta em HTML, com várias escolhas e opções, que gera os documentos automaticamente.",
-        resultado:
-          "A ferramenta foi aprovada pela empresa e hoje é usada por muitas pessoas. Uma tarefa lenta e propensa a erros passou a fazer-se em cerca de 2 minutos.",
-        metricas: [
-          { valor: "20 anos", legenda: "de processo manual, finalmente automatizado" },
-          { valor: "≈ 2 min", legenda: "para gerar um documento" },
-          { valor: "Muitas pessoas", legenda: "usam a ferramenta todos os dias" },
-        ],
-        tags: ["Base de dados", "AI", "HTML", "Automação"],
-      },
-    ],
+    casos: [], // vazio = a secção "Caso em destaque" não aparece
 
     experiencia: [
       {
@@ -134,8 +114,8 @@ window.SITE = {
     ],
 
     certificacoes: [
-      { nome: "TikTok Media Buying Professional", emissor: "TikTok for Business", data: "2026" },
-      { nome: "Google Ads Display Certification", emissor: "Google Skillshop", data: "2026" },
+      { nome: "TikTok Media Buying Professional", emissor: "TikTok for Business", data: "2026", pdf: "" },
+      { nome: "Google Ads Display Certification", emissor: "Google Skillshop", data: "2026", pdf: "" },
     ],
 
     recomendacao: {
@@ -179,6 +159,7 @@ window.SITE = {
       telefone: "Phone",
       cv: "Download CV",
       verProjeto: "View project →",
+      verCert: "View certificate",
       traduzido: "Translated from Portuguese",
       tema: "Toggle theme",
     },
@@ -208,30 +189,9 @@ window.SITE = {
       { valor: "5+", legenda: "industries, from energy to luxury" },
     ],
 
-    abordagem: [
-      { icone: "🔍", titulo: "Spotting problems", texto: "I quickly see where a process, campaign or workflow is falling short, and I don't wait to be asked to look into it." },
-      { icone: "💡", titulo: "Building solutions", texto: "I turn those problems into practical solutions: templates, simpler processes and automated tasks that save the team time." },
-      { icone: "✨", titulo: "Working with AI", texto: "I use artificial intelligence every day to analyse data, automate repetitive work and explore new ways to plan and optimise media." },
-    ],
+    abordagem: [], // vazio = a secção "Como trabalho" não aparece
 
-    casos: [
-      {
-        titulo: "An internal tool for a 20-year-old process",
-        resumo: "How I turned a manual, repetitive task into a tool used by many people across the company.",
-        problema:
-          "A repetitive task had been done the same way for about 20 years. It was manual, error-prone and could take a long time when a large document had to be produced. It had never been solved because it depended on a large database that nobody had ever built.",
-        solucao:
-          "I took the initiative to create that database and sped up its construction. Then, with the help of AI, I built an HTML tool with a range of choices and options that generates the documents automatically.",
-        resultado:
-          "The tool was approved by the company and is now used by many people. A slow, error-prone task now takes about 2 minutes.",
-        metricas: [
-          { valor: "20 years", legenda: "of manual process, finally automated" },
-          { valor: "≈ 2 min", legenda: "to generate a document" },
-          { valor: "Many people", legenda: "use the tool every day" },
-        ],
-        tags: ["Database", "AI", "HTML", "Automation"],
-      },
-    ],
+    casos: [], // vazio = a secção "Caso em destaque" não aparece
 
     experiencia: [
       {
@@ -272,8 +232,8 @@ window.SITE = {
     ],
 
     certificacoes: [
-      { nome: "TikTok Media Buying Professional", emissor: "TikTok for Business", data: "2026" },
-      { nome: "Google Ads Display Certification", emissor: "Google Skillshop", data: "2026" },
+      { nome: "TikTok Media Buying Professional", emissor: "TikTok for Business", data: "2026", pdf: "" },
+      { nome: "Google Ads Display Certification", emissor: "Google Skillshop", data: "2026", pdf: "" },
     ],
 
     recomendacao: {

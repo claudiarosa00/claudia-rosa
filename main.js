@@ -91,7 +91,12 @@
 
     // Certificações
     const CE = S.certificacoes || [];
-    $("certs").innerHTML = CE.map((c) => `<div class="cert reveal"><span class="cert-ico">✓</span><div><b>${esc(c.nome)}</b><span>${esc(c.emissor)} · ${esc(c.data)}</span></div></div>`).join("");
+    $("certs").innerHTML = CE.map((c) => {
+      const href = c.pdf || c.link;
+      const tag = href ? "a" : "div";
+      const attrs = href ? ` href="${esc(href)}" target="_blank" rel="noopener"` : "";
+      return `<${tag} class="cert reveal"${attrs}><span class="cert-ico">✓</span><div><b>${esc(c.nome)}</b><span>${esc(c.emissor)} · ${esc(c.data)}</span>${href ? `<em>${esc(T.verCert)} →</em>` : ""}</div></${tag}>`;
+    }).join("");
     show("certificacoes", CE.length);
 
     // Recomendação
