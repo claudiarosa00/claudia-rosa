@@ -127,12 +127,7 @@ window.SITE = {
       { nome: "Introduction to Python", emissor: "DataCamp", data: "2023", pdf: "certificados/datacamp-introduction-to-python.pdf" },
     ],
 
-    recomendacao: {
-      texto:
-        "A Cláudia é daquelas colegas que qualquer equipa gostaria de ter. É inteligente, perspicaz e muito empenhada, e tem a rara capacidade de perceber o que pode ser melhorado e de ir atrás disso sem esperar que lho peçam. É uma verdadeira team player e a pessoa a quem recorremos quando surge um imprevisto, porque encontra sempre uma solução.",
-      autor: "David Fernandes",
-      cargo: "Account Manager, Arena Media Portugal",
-    },
+    recomendacao: null, // null = a secção não aparece
 
     projetos: [], // vazio = a secção não aparece
 
@@ -254,12 +249,7 @@ window.SITE = {
       { nome: "Introduction to Python", emissor: "DataCamp", data: "2023", pdf: "certificados/datacamp-introduction-to-python.pdf" },
     ],
 
-    recomendacao: {
-      texto:
-        "Cláudia is the kind of colleague every team would love to have. She is smart, sharp and highly committed, and has the rare ability to see what can be improved and go after it without waiting to be asked. She is a true team player and the person we turn to when something unexpected comes up, because she always finds a solution.",
-      autor: "David Fernandes",
-      cargo: "Account Manager, Arena Media Portugal",
-    },
+    recomendacao: null, // null = a secção não aparece
 
     projetos: [],
 
