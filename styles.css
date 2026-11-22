@@ -409,3 +409,8 @@ body {
   :root:not([data-theme="light"]) .theme .ico-moon { display: none; }
 }
 .theme:hover { border-color: var(--accent); color: var(--accent); }
+
+/* nome no topo escondido enquanto o nome grande está visível */
+.logo-txt { opacity: 0; transform: translateX(-6px); transition: opacity .3s ease, transform .3s ease; pointer-events: none; }
+.nav.mostra-nome .logo-txt { opacity: 1; transform: none; pointer-events: auto; }
+@media (prefers-reduced-motion: reduce) { .logo-txt { transition: none; } }

@@ -150,6 +150,12 @@
     observar();
   }
 
+  // Nome no topo: só aparece depois de o nome grande sair do ecrã (evita repetição)
+  if ("IntersectionObserver" in window) {
+    const nav = document.querySelector(".nav");
+    new IntersectionObserver(([en]) => nav.classList.toggle("mostra-nome", !en.isIntersecting), { rootMargin: "-70px 0px 0px 0px" }).observe($("nome"));
+  }
+
   // Animação ao fazer scroll
   const io = "IntersectionObserver" in window
     ? new IntersectionObserver((entries) => entries.forEach((en) => {
