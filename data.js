@@ -104,7 +104,7 @@ window.SITE = {
 
     competencias: [
       { grupo: "Media", itens: ["Estratégia de media", "Planeamento", "Compra de media", "Paid Social", "Google Ads", "Programmatic", "TV · Rádio · OOH · Imprensa", "Reporting e otimização"] },
-      { grupo: "Dados, Automação & AI", itens: ["Inteligência Artificial (AI)", "ChatGPT", "Claude", "GitHub Copilot", "Criação de ferramentas com AI", "GitHub", "SQL", "Power BI", "Data-Driven Marketing", "Digital Analytics", "Data Science for Marketing", "Machine Learning", "Automação de processos"] },
+      { grupo: "Dados, Automação & AI", itens: ["Inteligência Artificial (AI)", "ChatGPT", "Claude", "GitHub Copilot", "Criação de ferramentas com AI", "GitHub", "Data-Driven Marketing", "Digital Analytics", "Data Science for Marketing", "Machine Learning", "Automação de processos"] },
       { grupo: "Pessoais", itens: ["Problem-solving", "Pensamento crítico", "Capacidade de organização", "Proatividade", "Comunicação", "Trabalho em equipa"] },
     ],
 
@@ -225,7 +225,7 @@ window.SITE = {
 
     competencias: [
       { grupo: "Media", itens: ["Media strategy", "Planning", "Media buying", "Paid Social", "Google Ads", "Programmatic", "TV · Radio · OOH · Print", "Reporting & optimisation"] },
-      { grupo: "Data, Automation & AI", itens: ["Artificial Intelligence (AI)", "ChatGPT", "Claude", "GitHub Copilot", "AI-assisted tool building", "GitHub", "SQL", "Power BI", "Data-Driven Marketing", "Digital Analytics", "Data Science for Marketing", "Machine Learning", "Process automation"] },
+      { grupo: "Data, Automation & AI", itens: ["Artificial Intelligence (AI)", "ChatGPT", "Claude", "GitHub Copilot", "AI-assisted tool building", "GitHub", "Data-Driven Marketing", "Digital Analytics", "Data Science for Marketing", "Machine Learning", "Process automation"] },
       { grupo: "Personal", itens: ["Problem-solving", "Critical thinking", "Organisation", "Proactivity", "Communication", "Teamwork"] },
     ],
 
