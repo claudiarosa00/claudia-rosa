@@ -43,26 +43,28 @@ function html(lang) {
 @page { size: A4; margin: 0; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: Inter, sans-serif; color: #16181d; font-size: 9.4pt; line-height: 1.5; width: 210mm; min-height: 297mm; display: grid; grid-template-columns: 66mm 1fr; }
-aside { background: #eef1fb; padding: 12mm 8mm 10mm 10mm; display: flex; flex-direction: column; gap: 5.5mm; }
-main { padding: 12mm 12mm 10mm 10mm; display: flex; flex-direction: column; gap: 4.5mm; }
+aside { background: #eef1fb; padding: 12mm 8mm 10mm 10mm; display: flex; flex-direction: column; gap: 8mm; }
+main { padding: 12mm 12mm 10mm 10mm; display: flex; flex-direction: column; gap: 8mm; }
 .foto { width: 32mm; height: 32mm; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 1mm; }
 h1 { font-family: Fraunces, serif; font-weight: 600; font-size: 25pt; line-height: 1.05; letter-spacing: -.3px; }
 .cargo { color: #2f5bea; font-weight: 600; font-size: 11pt; margin-top: 1.5mm; }
-h2 { font-size: 8pt; text-transform: uppercase; letter-spacing: .14em; color: #2f5bea; font-weight: 700; margin-bottom: 2.2mm; padding-bottom: 1.2mm; border-bottom: 1px solid #d7ddf2; }
+h2 { font-size: 8pt; text-transform: uppercase; letter-spacing: .14em; color: #2f5bea; font-weight: 700; margin-bottom: 3.2mm; padding-bottom: 1.6mm; border-bottom: 1px solid #d7ddf2; }
 aside h2 { border-color: #cfd7f3; }
 .contactos div { margin-bottom: 1.6mm; word-break: break-word; }
 .contactos b { display: block; font-size: 7.5pt; color: #5d6370; font-weight: 500; }
 .contactos a { color: inherit; text-decoration: none; }
 .chips { display: flex; flex-wrap: wrap; gap: 1.3mm; }
 .chip { background: #fff; border: 1px solid #d7ddf2; border-radius: 99px; padding: .5mm 2.2mm; font-size: 7.8pt; }
-.grupo { margin-bottom: 2.6mm; } .grupo h3 { font-size: 8pt; font-weight: 600; margin-bottom: .6mm; color: #2f5bea; } .grupo p { color: #353a45; font-size: 8.3pt; }
+.grupo { margin-bottom: 3.2mm; } .grupo h3 { font-size: 8pt; font-weight: 600; margin-bottom: .6mm; color: #2f5bea; } .grupo p { color: #353a45; font-size: 8.3pt; }
 ul.simples { list-style: none; } ul.simples li { margin-bottom: 1.2mm; }
 ul.simples span { display: block; color: #5d6370; font-size: 8pt; }
 .perfil { color: #353a45; }
-.job { margin-bottom: 2.8mm; }
+.job { margin-bottom: 4mm; } .job:last-child { margin-bottom: 0; }
 .job .top { display: flex; justify-content: space-between; gap: 4mm; align-items: baseline; }
 .job h3 { font-size: 10.3pt; font-weight: 600; }
 .job .emp { color: #2f5bea; font-weight: 600; text-decoration: none; }
+.job .emp { white-space: nowrap; }
+.job h3 { padding-left: 7.2mm; text-indent: -7.2mm; }
 .job .per { color: #5d6370; font-size: 8.3pt; white-space: nowrap; }
 .job p { color: #353a45; margin-top: .8mm; }
 .job ul { margin: 1.2mm 0 0 4mm; color: #353a45; } .job li { margin-bottom: .6mm; }
