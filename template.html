@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Título e descrição: é o que aparece na pré-visualização do LinkedIn -->
+  <title>Cláudia Rosa — Media Expert</title>
+  <meta name="description" content="Cláudia Rosa, Media Expert na Arena Media Portugal. Estratégias de media integradas, dados, automação e AI." />
+  <meta property="og:title" content="Cláudia Rosa — Media Expert" />
+  <meta property="og:description" content="Media Expert na Arena Media Portugal. Estratégias de media integradas, do planeamento à análise, com dados, automação e AI." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://claudia-rosa.vercel.app/og.png" />
+  <meta property="og:url" content="https://claudia-rosa.vercel.app/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%232f5bea'/><stop offset='.55' stop-color='%237b5cf0'/><stop offset='1' stop-color='%23e9604a'/></linearGradient></defs><rect width='100' height='100' rx='24' fill='url(%23g)'/><text x='50' y='64' font-size='42' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>CR</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="#topo" class="logo" id="logo"></a>
+      <nav class="nav-links">
+        <a href="#sobre" data-nav="sobre"></a>
+        <a href="#caso" data-nav="caso"></a>
+        <a href="#experiencia" data-nav="experiencia"></a>
+        <a href="#competencias" data-nav="competencias"></a>
+        <a href="#contacto" data-nav="contacto"></a>
+      </nav>
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button data-lang="pt">PT</button>
+        <button data-lang="en">EN</button>
+      </div>
+      <button class="theme" id="theme">◐</button>
+    </div>
+  </header>
+
+  <main id="topo">
+    <section class="hero wrap">
+      <div class="hero-text reveal">
+        <p class="badge" id="badge"><span class="dot"></span><span data-t="disponivel"></span></p>
+        <h1 id="nome"></h1>
+        <p class="cargo" id="cargo"></p>
+        <p class="frase" id="frase"></p>
+        <div class="ctas" id="ctas"></div>
+      </div>
+      <div class="avatar reveal" id="avatar"></div>
+    </section>
+
+    <section id="sobre" class="wrap section">
+      <h2 class="reveal" data-t="sobre"></h2>
+      <div class="sobre-grid">
+        <div class="sobre-texto reveal" id="sobre-texto"></div>
+        <div class="numeros reveal" id="numeros"></div>
+      </div>
+    </section>
+
+    <section id="abordagem" class="wrap section">
+      <h2 class="reveal" data-t="abordagem"></h2>
+      <div class="abordagem" id="abordagem-lista"></div>
+    </section>
+
+    <section id="caso" class="wrap section">
+      <h2 class="reveal" data-t="caso"></h2>
+      <div id="casos"></div>
+    </section>
+
+    <section id="experiencia" class="wrap section">
+      <h2 class="reveal" data-t="experiencia"></h2>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <section id="competencias" class="wrap section">
+      <h2 class="reveal" data-t="competencias"></h2>
+      <div class="skills" id="skills"></div>
+    </section>
+
+    <section id="ferramentas" class="wrap section">
+      <h2 class="reveal" data-t="ferramentas"></h2>
+      <div class="skills" id="ferramentas-lista"></div>
+    </section>
+
+    <section id="certificacoes" class="wrap section">
+      <h2 class="reveal" data-t="certificacoes"></h2>
+      <div class="certs" id="certs"></div>
+    </section>
+
+    <section id="recomendacao" class="wrap section">
+      <figure class="quote reveal" id="quote"></figure>
+    </section>
+
+    <section id="projetos" class="wrap section">
+      <h2 class="reveal" data-t="projetos"></h2>
+      <div class="cards" id="cards"></div>
+    </section>
+
+    <section id="formacao" class="wrap section">
+      <h2 class="reveal" data-t="formacao"></h2>
+      <div class="formacao-grid">
+        <ul class="formacao" id="formacao-lista"></ul>
+        <ul class="idiomas reveal" id="idiomas"></ul>
+      </div>
+    </section>
+
+    <section id="contacto" class="wrap section contacto reveal">
+      <h2 data-t="contactoTitulo"></h2>
+      <p data-t="contactoTexto"></p>
+      <div class="contact-info" id="contact-info"></div>
+      <div class="ctas center" id="ctas2"></div>
+    </section>
+  </main>
+
+  <footer class="wrap footer" id="footer"></footer>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

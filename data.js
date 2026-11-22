@@ -43,6 +43,7 @@ window.SITE = {
       cv: "Descarregar CV",
       verProjeto: "Ver projeto →",
       verCert: "Ver certificado",
+      cursos: "cursos",
       traduzido: "",
       tema: "Mudar tema",
     },
@@ -58,11 +59,9 @@ window.SITE = {
       "Media Expert com 4 anos de experiência em estratégias de media integradas, do planeamento à compra, otimização e análise, em canais digitais e offline. Tenho facilidade em detetar problemas e transformá-los em soluções práticas, com dados, automação e AI. Criei uma ferramenta interna, hoje usada por muitas pessoas na empresa, que reduziu uma tarefa repetitiva para cerca de 2 minutos.",
 
     sobre: [
-      "Sou Media Expert com 4 anos de experiência no desenvolvimento de estratégias de media integradas, em canais digitais e offline. Acompanho todo o ciclo de vida das campanhas: estratégia, planeamento, compra, otimização, reporting e análise.",
-      "No digital, tenho experiência prática em Paid Social (Meta, TikTok e LinkedIn), compra direta de media e Google, em estreita colaboração com as equipas de Programmatic e AdOps. No offline, trabalho com OOH, rádio, imprensa e TV.",
-      "Procuro constantemente formas de tornar os processos mais simples e eficientes: melhorei fluxos de reporting e planeamento, criei templates, automatizei tarefas repetitivas e estruturei melhor a informação das campanhas.",
-      "O que mais me motiva é identificar o que não está a funcionar, muitas vezes antes de alguém dar por isso, e encontrar uma solução prática e escalável. Gosto de questionar a forma como as coisas sempre foram feitas.",
-      "Trabalho muito com inteligência artificial e gosto mesmo disso: uso ChatGPT, Claude e Microsoft Copilot no dia a dia para analisar informação, automatizar tarefas e criar ferramentas que simplificam o trabalho da equipa, mesmo sem ser programadora. Interessa-me sobretudo a interseção entre media, dados e AI, e como podem levar a decisões mais inteligentes e estratégias de media mais fortes.",
+      "Sou **Media Expert** com 4 anos de experiência em estratégias de media integradas, digitais e offline. Acompanho todo o ciclo das campanhas, da estratégia e planeamento à compra, otimização e análise, com experiência prática em **Meta, TikTok, LinkedIn e Google**, e em TV, rádio, OOH e imprensa.",
+      "O que mais me motiva é **detetar o que não está a funcionar e encontrar uma solução prática**, muitas vezes antes de alguém dar por isso. Gosto de questionar a forma como as coisas sempre foram feitas: melhorei fluxos de reporting e planeamento, criei templates e automatizei tarefas repetitivas.",
+      "Trabalho todos os dias com **AI (ChatGPT, Claude e Microsoft Copilot)** para analisar informação, automatizar tarefas e criar ferramentas que simplificam o trabalho da equipa, mesmo sem ser programadora. Interessa-me sobretudo a interseção entre media, dados e AI.",
     ],
 
     numeros: [], // vazio = os cartões de números não aparecem
@@ -171,6 +170,7 @@ window.SITE = {
       cv: "Download CV",
       verProjeto: "View project →",
       verCert: "View certificate",
+      cursos: "courses",
       traduzido: "Translated from Portuguese",
       tema: "Toggle theme",
     },
@@ -186,11 +186,9 @@ window.SITE = {
       "Media Expert with 4 years of experience in integrated media strategies, from planning and buying to optimisation and analysis, across digital and offline channels. I have a knack for spotting problems and turning them into practical solutions with data, automation and AI. I built an internal tool, now used by many people across the company, that cut a repetitive task down to about 2 minutes.",
 
     sobre: [
-      "I'm a Media Expert with 4 years of experience developing integrated media strategies across digital and offline channels. My work covers the full campaign lifecycle: strategy, planning, buying, optimisation, reporting and analysis.",
-      "In digital, I have hands-on experience in Paid Social (Meta, TikTok and LinkedIn), direct media buying and Google, working closely with Programmatic and AdOps teams. Offline, I work with OOH, radio, print and TV.",
-      "I'm always looking for ways to make processes simpler and more efficient: I've improved reporting and planning workflows, built templates, automated repetitive tasks and introduced better ways of structuring campaign data.",
-      "What drives me most is spotting what isn't working, often before anyone else notices, and finding a practical, scalable solution. I like to challenge the way things have always been done.",
-      "I work a lot with artificial intelligence and genuinely enjoy it: I use ChatGPT, Claude and Microsoft Copilot every day to analyse information, automate tasks and build tools that make the team's work easier, even though I'm not a developer. I'm especially interested in the intersection of media, data and AI, and how they can lead to smarter decisions and stronger media strategies.",
+      "I'm a **Media Expert** with 4 years of experience in integrated media strategies across digital and offline channels. I cover the full campaign lifecycle, from strategy and planning to buying, optimisation and analysis, with hands-on experience in **Meta, TikTok, LinkedIn and Google**, as well as TV, radio, OOH and print.",
+      "What drives me most is **spotting what isn't working and finding a practical solution**, often before anyone else notices. I like to challenge the way things have always been done: I've improved reporting and planning workflows, built templates and automated repetitive tasks.",
+      "I work with **AI (ChatGPT, Claude and Microsoft Copilot)** every day to analyse information, automate tasks and build tools that make the team's work easier, even though I'm not a developer. I'm especially interested in the intersection of media, data and AI.",
     ],
 
     numeros: [], // vazio = os cartões de números não aparecem

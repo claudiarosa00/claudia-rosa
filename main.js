@@ -2,6 +2,7 @@
   const C = window.SITE.comum;
   const $ = (id) => document.getElementById(id);
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const rich = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
   const tel = (t) => "tel:" + t.replace(/\s/g, "");
 
   const icons = {
@@ -31,7 +32,7 @@
     if (L.email) btn.push(`<a class="btn" href="mailto:${esc(L.email)}">${icons.email}${esc(T.email)}</a>`);
     if (L.telefone) btn.push(`<a class="btn" href="${esc(tel(L.telefone))}">${icons.phone}${esc(T.telefone)}</a>`);
     if (L.github) btn.push(`<a class="btn" href="${esc(L.github)}" target="_blank" rel="noopener">${icons.github}GitHub</a>`);
-    $("ctas").innerHTML = btn.join("");
+    $("ctas").innerHTML = btn.slice(0, 2).join(""); // topo: só LinkedIn + CV
     $("ctas2").innerHTML = btn.join("");
 
     const info = [];
@@ -48,7 +49,7 @@
     $("avatar").innerHTML = C.foto ? `<img src="${esc(C.foto)}" alt="${esc(C.nome)}">` : esc(C.iniciais);
 
     // Sobre
-    $("sobre-texto").innerHTML = S.sobre.map((p) => `<p>${esc(p)}</p>`).join("");
+    $("sobre-texto").innerHTML = S.sobre.map((p) => `<p>${rich(p)}</p>`).join("");
     $("numeros").hidden = !S.numeros.length;
     document.querySelector(".sobre-grid").classList.toggle("so-texto", !S.numeros.length);
     $("numeros").innerHTML = S.numeros.map((n) => `<div class="numero"><b>${esc(n.valor)}</b><span>${esc(n.legenda)}</span></div>`).join("");
@@ -101,11 +102,20 @@
 
     // Certificações
     const CE = S.certificacoes || [];
-    $("certs").innerHTML = CE.map((c) => {
-      const href = c.pdf || c.link;
-      const tag = href ? "a" : "div";
-      const attrs = href ? ` href="${esc(href)}" target="_blank" rel="noopener"` : "";
-      return `<${tag} class="cert reveal"${attrs}><span class="cert-ico">✓</span><div><b>${esc(c.nome)}</b><span>${esc(c.emissor)} · ${esc(c.data)}</span>${href ? `<em>${esc(T.verCert)} →</em>` : ""}</div></${tag}>`;
+    const certLink = (c) => c.pdf || c.link;
+    const porEmissor = {};
+    CE.forEach((c) => (porEmissor[c.emissor] = porEmissor[c.emissor] || []).push(c));
+    $("certs").innerHTML = Object.entries(porEmissor).map(([emissor, cs]) => {
+      if (cs.length === 1) {
+        const c = cs[0], href = certLink(c), tag = href ? "a" : "div";
+        const attrs = href ? ` href="${esc(href)}" target="_blank" rel="noopener"` : "";
+        return `<${tag} class="cert reveal"${attrs}><span class="cert-ico">✓</span><div><b>${esc(c.nome)}</b><span>${esc(c.emissor)} · ${esc(c.data)}</span>${href ? `<em>${esc(T.verCert)} →</em>` : ""}</div></${tag}>`;
+      }
+      const anos = [...new Set(cs.map((c) => c.data))].sort();
+      return `<div class="cert cert-grupo reveal"><span class="cert-ico">✓</span><div>
+        <b>${esc(emissor)}</b><span>${cs.length} ${esc(T.cursos)} · ${anos[0]}${anos.length > 1 ? "–" + anos[anos.length - 1] : ""}</span>
+        <ul>${cs.map((c) => { const href = certLink(c); return `<li>${href ? `<a href="${esc(href)}" target="_blank" rel="noopener">${esc(c.nome)}</a>` : esc(c.nome)} <small>${esc(c.data)}</small></li>`; }).join("")}</ul>
+      </div></div>`;
     }).join("");
     show("certificacoes", CE.length);
 
@@ -152,7 +162,7 @@
     const q = new URLSearchParams(location.search).get("lang");
     if (q === "pt" || q === "en") return q;
     try { const s = localStorage.getItem("idioma"); if (s === "pt" || s === "en") return s; } catch (e) {}
-    return (navigator.language || "pt").toLowerCase().startsWith("pt") ? "pt" : "en";
+    return "pt";
   }
   document.querySelectorAll("[data-lang]").forEach((b) => b.addEventListener("click", () => {
     const lang = b.dataset.lang;

@@ -233,8 +233,8 @@ a.cert:hover { transform: translateY(-2px); box-shadow: var(--shadow); border-co
 .caso-passos p { color: var(--muted); }
 
 /* ANIMAÇÃO */
-.reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
-.reveal.visible { opacity: 1; transform: none; }
+.js .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+.js .reveal.visible { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
   html { scroll-behavior: auto; }
@@ -250,7 +250,7 @@ a.cert:hover { transform: translateY(-2px); box-shadow: var(--shadow); border-co
   .avatar { order: -1; max-width: 160px; justify-self: start; font-size: 3rem; }
   .sobre-grid, .formacao-grid { grid-template-columns: 1fr; gap: 24px; }
   .contacto { margin-left: 16px; margin-right: 16px; }
-  .wrap { padding: 0 16px; }
+  .wrap { padding-left: 16px; padding-right: 16px; }
 }
 
 /* =====================================================================
@@ -320,3 +320,52 @@ body {
 .contact-info svg { color: #fff; }
 .contacto .btn { background: rgba(255,255,255,.14); color: #fff; border-color: rgba(255,255,255,.38); }
 .contacto .btn.primary { background: #fff; color: #2f5bea; }
+
+/* =====================================================================
+   AJUSTES DA AUDITORIA
+   ===================================================================== */
+/* contraste: tons de texto mais escuros (≥ 4.5:1) */
+:root { --violet-ink: #6a48e0; --coral-ink: #bf3d28; }
+:root[data-theme="dark"] { --violet-ink: var(--violet); --coral-ink: var(--coral); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --violet-ink: var(--violet); --coral-ink: var(--coral); } }
+.skills > .skill-group:nth-child(3n+2) { --c: var(--violet-ink); }
+.skills > .skill-group:nth-child(3n+3) { --c: var(--coral-ink); }
+.timeline > li:nth-child(3n+2) .empresa { color: var(--violet-ink); }
+.timeline > li:nth-child(3n+3) .empresa { color: var(--coral-ink); }
+.certs > .cert:nth-child(3n+2) .cert-ico { color: var(--violet-ink); }
+.certs > .cert:nth-child(3n+3) .cert-ico { color: var(--coral-ink); }
+
+/* negrito no Sobre mim */
+.sobre-texto strong { color: var(--text); font-weight: 600; }
+
+/* certificações agrupadas */
+.cert-grupo { grid-column: 1 / -1; align-items: flex-start; }
+.cert-grupo > div { flex: 1; min-width: 0; }
+.cert-grupo ul { list-style: none; margin-top: 12px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 6px 24px; }
+.cert-grupo li { padding: 6px 0; border-bottom: 1px dashed var(--line); }
+.cert-grupo li a { color: var(--accent); font-weight: 500; text-decoration: none; }
+.cert-grupo li a:hover { text-decoration: underline; }
+.cert-grupo small { color: var(--muted); margin-left: 4px; }
+
+/* áreas de toque maiores */
+.lang button { padding: 8px 12px; }
+.theme { width: 40px; height: 40px; }
+.contact-info a { padding: 9px 4px; }
+.logo { padding: 8px 0; }
+
+/* menu no telemóvel: links numa faixa que desliza na horizontal */
+@media (max-width: 760px) {
+  html { scroll-padding-top: 118px; }
+  .nav-inner { flex-wrap: wrap; height: auto; padding-top: 8px; gap: 8px 12px; }
+  .nav-links {
+    display: flex; order: 3; width: 100%; margin: 0 -16px; padding: 4px 16px 10px;
+    gap: 6px; overflow-x: auto; scrollbar-width: none; width: calc(100% + 32px);
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links + .lang { margin-left: auto; }
+  .lang button { min-height: 36px; }
+  .nav-links a {
+    flex: none; padding: 9px 14px; border-radius: 999px; font-size: .9rem;
+    background: var(--surface); border: 1px solid var(--line);
+  }
+}

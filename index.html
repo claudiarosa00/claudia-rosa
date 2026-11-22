@@ -1,120 +1,157 @@
 <!doctype html>
-<html lang="pt">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="pt"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Título e descrição: é o que aparece na pré-visualização do LinkedIn -->
   <title>Cláudia Rosa — Media Expert</title>
-  <meta name="description" content="Cláudia Rosa, Media Expert na Arena Media Portugal. Estratégias de media integradas, dados, automação e AI." />
-  <meta property="og:title" content="Cláudia Rosa — Media Expert" />
-  <meta property="og:description" content="Media Expert na Arena Media Portugal. Estratégias de media integradas, do planeamento à análise, com dados, automação e AI." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://claudia-rosa.vercel.app/og.png" />
-  <meta property="og:url" content="https://claudia-rosa.vercel.app/" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%232f5bea'/><text x='50' y='66' font-size='48' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>•</text></svg>" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Cláudia Rosa, Media Expert na Arena Media Portugal. Estratégias de media integradas, dados, automação e AI.">
+  <meta property="og:title" content="Cláudia Rosa — Media Expert">
+  <meta property="og:description" content="Media Expert na Arena Media Portugal. Estratégias de media integradas, do planeamento à análise, com dados, automação e AI.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://claudia-rosa.vercel.app/og.png">
+  <meta property="og:url" content="https://claudia-rosa.vercel.app/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;defs&gt;&lt;linearGradient id='g' x1='0' y1='0' x2='1' y2='1'&gt;&lt;stop offset='0' stop-color='%232f5bea'/&gt;&lt;stop offset='.55' stop-color='%237b5cf0'/&gt;&lt;stop offset='1' stop-color='%23e9604a'/&gt;&lt;/linearGradient&gt;&lt;/defs&gt;&lt;rect width='100' height='100' rx='24' fill='url(%23g)'/&gt;&lt;text x='50' y='64' font-size='42' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'&gt;CR&lt;/text&gt;&lt;/svg&gt;">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,500;9..144,600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
   <header class="nav">
     <div class="wrap nav-inner">
-      <a href="#topo" class="logo" id="logo"></a>
+      <a href="#topo" class="logo" id="logo">CR</a>
       <nav class="nav-links">
-        <a href="#sobre" data-nav="sobre"></a>
-        <a href="#caso" data-nav="caso"></a>
-        <a href="#experiencia" data-nav="experiencia"></a>
-        <a href="#competencias" data-nav="competencias"></a>
-        <a href="#contacto" data-nav="contacto"></a>
+        <a href="#sobre" data-nav="sobre">Sobre</a>
+        <a href="#caso" data-nav="caso" hidden="">Caso</a>
+        <a href="#experiencia" data-nav="experiencia">Experiência</a>
+        <a href="#competencias" data-nav="competencias">Competências</a>
+        <a href="#contacto" data-nav="contacto">Contacto</a>
       </nav>
       <div class="lang" role="group" aria-label="Idioma / Language">
         <button data-lang="pt">PT</button>
         <button data-lang="en">EN</button>
       </div>
-      <button class="theme" id="theme">◐</button>
+      <button class="theme" id="theme" aria-label="Mudar tema">◐</button>
     </div>
   </header>
 
   <main id="topo">
     <section class="hero wrap">
       <div class="hero-text reveal">
-        <p class="badge" id="badge"><span class="dot"></span><span data-t="disponivel"></span></p>
-        <h1 id="nome"></h1>
-        <p class="cargo" id="cargo"></p>
-        <p class="frase" id="frase"></p>
-        <div class="ctas" id="ctas"></div>
+        <p class="badge" id="badge" hidden=""><span class="dot"></span><span data-t="disponivel">Disponível para novas oportunidades</span></p>
+        <h1 id="nome">Cláudia Rosa</h1>
+        <p class="cargo" id="cargo">Media Expert na Arena Media Portugal · Lisboa, Portugal</p>
+        <p class="frase" id="frase">Estratégias de media integradas, com olho para detetar problemas e vontade de os resolver, usando dados, automação e AI.</p>
+        <div class="ctas" id="ctas"><a class="btn primary" href="https://www.linkedin.com/in/cl%C3%A1udia-rosa-95681817a/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"></path></svg>LinkedIn</a><a class="btn" href="cv-claudia-rosa.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"></path></svg>Descarregar CV</a></div>
       </div>
-      <div class="avatar reveal" id="avatar"></div>
+      <div class="avatar reveal" id="avatar"><img src="foto.jpg" alt="Cláudia Rosa"></div>
     </section>
 
     <section id="sobre" class="wrap section">
-      <h2 class="reveal" data-t="sobre"></h2>
-      <div class="sobre-grid">
-        <div class="sobre-texto reveal" id="sobre-texto"></div>
-        <div class="numeros reveal" id="numeros"></div>
+      <h2 class="reveal" data-t="sobre">Sobre mim</h2>
+      <div class="sobre-grid so-texto">
+        <div class="sobre-texto reveal" id="sobre-texto"><p>Sou <strong>Media Expert</strong> com 4 anos de experiência em estratégias de media integradas, digitais e offline. Acompanho todo o ciclo das campanhas, da estratégia e planeamento à compra, otimização e análise, com experiência prática em <strong>Meta, TikTok, LinkedIn e Google</strong>, e em TV, rádio, OOH e imprensa.</p><p>O que mais me motiva é <strong>detetar o que não está a funcionar e encontrar uma solução prática</strong>, muitas vezes antes de alguém dar por isso. Gosto de questionar a forma como as coisas sempre foram feitas: melhorei fluxos de reporting e planeamento, criei templates e automatizei tarefas repetitivas.</p><p>Trabalho todos os dias com <strong>AI (ChatGPT, Claude e Microsoft Copilot)</strong> para analisar informação, automatizar tarefas e criar ferramentas que simplificam o trabalho da equipa, mesmo sem ser programadora. Interessa-me sobretudo a interseção entre media, dados e AI.</p></div>
+        <div class="numeros reveal" id="numeros" hidden=""></div>
       </div>
     </section>
 
-    <section id="abordagem" class="wrap section">
-      <h2 class="reveal" data-t="abordagem"></h2>
+    <section id="abordagem" class="wrap section" hidden="">
+      <h2 class="reveal" data-t="abordagem">Como trabalho</h2>
       <div class="abordagem" id="abordagem-lista"></div>
     </section>
 
-    <section id="caso" class="wrap section">
-      <h2 class="reveal" data-t="caso"></h2>
+    <section id="caso" class="wrap section" hidden="">
+      <h2 class="reveal" data-t="caso">Caso em destaque</h2>
       <div id="casos"></div>
     </section>
 
     <section id="experiencia" class="wrap section">
-      <h2 class="reveal" data-t="experiencia"></h2>
-      <ol class="timeline" id="timeline"></ol>
+      <h2 class="reveal" data-t="experiencia">Experiência</h2>
+      <ol class="timeline" id="timeline">
+      <li class="reveal">
+        <div class="top"><h3>Media Expert · <span class="empresa">Arena Media Portugal</span></h3><span class="periodo">jul 2023 — Presente</span></div>
+        <p>Planeamento, compra e gestão de campanhas multicanal em TV, rádio, digital, outdoor e imprensa, desenvolvendo estratégias integradas em conjunto com as equipas de AdOps, Programmatic, Conteúdo e Research.</p>
+        <ul><li>Criei, com a ajuda de AI (ChatGPT, Claude e Copilot), uma ferramenta interna hoje usada por muitas pessoas na empresa, que reduziu uma tarefa repetitiva para cerca de 2 minutos</li><li>Compra direta de media em Paid Social (Meta, TikTok, LinkedIn) e Google</li><li>Melhoria dos fluxos de reporting e planeamento, com templates e automação de tarefas repetitivas</li><li>Clientes de mobilidade, energia, saúde, automóvel, luxo e bebidas espirituosas</li><li>Colaboração internacional com equipas em Espanha e França</li></ul>
+      </li>
+      <li class="reveal">
+        <div class="top"><h3>Associate Media Expert · <span class="empresa">Arena Media Portugal</span></h3><span class="periodo">jul 2022 — jun 2023</span></div>
+        <p>Apoio ao planeamento, implementação e análise de campanhas de media multicanal, em contacto diário com clientes, parceiros de media e equipas internas.</p>
+        
+      </li>
+      <li class="reveal">
+        <div class="top"><h3>Marketing Trainee · <span class="empresa">Flying Tiger Copenhagen</span></h3><span class="periodo">fev 2022 — mai 2022</span></div>
+        <p>Estágio na área de marketing.</p>
+        
+      </li></ol>
     </section>
 
     <section id="competencias" class="wrap section">
-      <h2 class="reveal" data-t="competencias"></h2>
-      <div class="skills" id="skills"></div>
+      <h2 class="reveal" data-t="competencias">Competências</h2>
+      <div class="skills" id="skills">
+      <div class="skill-group reveal"><h3>Media</h3>
+        <div class="chips"><span class="chip">Estratégia de media</span><span class="chip">Planeamento</span><span class="chip">Compra de media</span><span class="chip">Paid Social</span><span class="chip">Programmatic</span><span class="chip">TV · Rádio · OOH · Imprensa</span><span class="chip">Reporting e otimização</span></div>
+      </div>
+      <div class="skill-group reveal"><h3>Dados, Automação &amp; AI</h3>
+        <div class="chips"><span class="chip">Inteligência Artificial (AI)</span><span class="chip">Criação de ferramentas com AI</span><span class="chip">Automação de processos</span><span class="chip">Data-Driven Marketing</span><span class="chip">Digital Analytics</span><span class="chip">Data Science for Marketing</span><span class="chip">Machine Learning</span></div>
+      </div>
+      <div class="skill-group reveal"><h3>Pessoais</h3>
+        <div class="chips"><span class="chip">Problem-solving</span><span class="chip">Pensamento crítico</span><span class="chip">Capacidade de organização</span><span class="chip">Proatividade</span><span class="chip">Comunicação</span><span class="chip">Trabalho em equipa</span></div>
+      </div></div>
     </section>
 
     <section id="ferramentas" class="wrap section">
-      <h2 class="reveal" data-t="ferramentas"></h2>
-      <div class="skills" id="ferramentas-lista"></div>
+      <h2 class="reveal" data-t="ferramentas">Ferramentas</h2>
+      <div class="skills" id="ferramentas-lista">
+      <div class="skill-group reveal"><h3>Media &amp; Analytics</h3>
+        <div class="chips"><span class="chip tool">Meta Ads</span><span class="chip tool">TikTok Ads</span><span class="chip tool">LinkedIn Ads</span><span class="chip tool">Google Ads</span><span class="chip tool">Google Analytics</span><span class="chip tool">Yumi (Marktest)</span></div>
+      </div>
+      <div class="skill-group reveal"><h3>AI</h3>
+        <div class="chips"><span class="chip tool">ChatGPT</span><span class="chip tool">Claude</span><span class="chip tool">Microsoft Copilot</span><span class="chip tool">GitHub</span></div>
+      </div>
+      <div class="skill-group reveal"><h3>Produtividade &amp; Colaboração</h3>
+        <div class="chips"><span class="chip tool">Excel</span><span class="chip tool">Google Sheets</span><span class="chip tool">Word</span><span class="chip tool">PowerPoint</span><span class="chip tool">Google Slides</span><span class="chip tool">Canva</span><span class="chip tool">Asana</span><span class="chip tool">ClickUp</span><span class="chip tool">Microsoft Teams</span></div>
+      </div></div>
     </section>
 
     <section id="certificacoes" class="wrap section">
-      <h2 class="reveal" data-t="certificacoes"></h2>
-      <div class="certs" id="certs"></div>
+      <h2 class="reveal" data-t="certificacoes">Certificações</h2>
+      <div class="certs" id="certs"><a class="cert reveal" href="https://www.credential.net/b71ee64f-2c02-4d34-99e2-31d61d002673?key=b41809fcd03b176f8cf08c61c64fab2ba6f2c18856a71967d04f153131a1f374" target="_blank" rel="noopener"><span class="cert-ico">✓</span><div><b>TikTok Media Buying Certification</b><span>TikTok for Business · 2026</span><em>Ver certificado →</em></div></a><a class="cert reveal" href="https://www.credential.net/a2708979-e1ea-44fd-bc99-fee88590fa17" target="_blank" rel="noopener"><span class="cert-ico">✓</span><div><b>Google Ads Display Certification</b><span>Google Skillshop · 2026</span><em>Ver certificado →</em></div></a><div class="cert cert-grupo reveal"><span class="cert-ico">✓</span><div>
+        <b>DataCamp</b><span>8 cursos · 2023–2025</span>
+        <ul><li><a href="certificados/datacamp-introduction-to-sql.pdf" target="_blank" rel="noopener">Introduction to SQL</a> <small>2025</small></li><li><a href="certificados/datacamp-machine-learning-for-business.pdf" target="_blank" rel="noopener">Machine Learning for Business</a> <small>2024</small></li><li><a href="certificados/datacamp-introduction-to-power-bi.pdf" target="_blank" rel="noopener">Introduction to Power BI</a> <small>2024</small></li><li><a href="certificados/datacamp-data-manipulation-pandas.pdf" target="_blank" rel="noopener">Data Manipulation with pandas</a> <small>2024</small></li><li><a href="certificados/datacamp-intermediate-python.pdf" target="_blank" rel="noopener">Intermediate Python</a> <small>2024</small></li><li><a href="certificados/datacamp-understanding-machine-learning.pdf" target="_blank" rel="noopener">Understanding Machine Learning</a> <small>2024</small></li><li><a href="certificados/datacamp-understanding-data-science.pdf" target="_blank" rel="noopener">Understanding Data Science</a> <small>2024</small></li><li><a href="certificados/datacamp-introduction-to-python.pdf" target="_blank" rel="noopener">Introduction to Python</a> <small>2023</small></li></ul>
+      </div></div></div>
     </section>
 
     <section id="recomendacao" class="wrap section">
-      <figure class="quote reveal" id="quote"></figure>
+      <figure class="quote reveal" id="quote"><blockquote>“A Cláudia é daquelas colegas que qualquer equipa gostaria de ter. É inteligente, perspicaz e muito empenhada, e tem a rara capacidade de perceber o que pode ser melhorado e de ir atrás disso sem esperar que lho peçam. É uma verdadeira team player e a pessoa a quem recorremos quando surge um imprevisto, porque encontra sempre uma solução.”</blockquote><figcaption><b>David Fernandes</b><span>Account Manager, Arena Media Portugal</span></figcaption></figure>
     </section>
 
-    <section id="projetos" class="wrap section">
-      <h2 class="reveal" data-t="projetos"></h2>
+    <section id="projetos" class="wrap section" hidden="">
+      <h2 class="reveal" data-t="projetos">Projetos</h2>
       <div class="cards" id="cards"></div>
     </section>
 
     <section id="formacao" class="wrap section">
-      <h2 class="reveal" data-t="formacao"></h2>
+      <h2 class="reveal" data-t="formacao">Formação &amp; Idiomas</h2>
       <div class="formacao-grid">
-        <ul class="formacao" id="formacao-lista"></ul>
-        <ul class="idiomas reveal" id="idiomas"></ul>
+        <ul class="formacao" id="formacao-lista"><li class="reveal"><b>Mestrado em Data-Driven Marketing</b><span>NOVA IMS · 16 valores · 2023 — 2025</span></li><li class="reveal"><b>Licenciatura em Marketing</b><span>IPAM · 16 valores · 2019 — 2022</span></li></ul>
+        <ul class="idiomas reveal" id="idiomas"><li>Português (nativo)</li><li>Inglês (avançado)</li></ul>
       </div>
     </section>
 
     <section id="contacto" class="wrap section contacto reveal">
-      <h2 data-t="contactoTitulo"></h2>
-      <p data-t="contactoTexto"></p>
-      <div class="contact-info" id="contact-info"></div>
-      <div class="ctas center" id="ctas2"></div>
+      <h2 data-t="contactoTitulo">Vamos conversar?</h2>
+      <p data-t="contactoTexto">Estou sempre aberta a novos desafios, colaborações e uma boa conversa.</p>
+      <div class="contact-info" id="contact-info"><a href="mailto:cfonsecarosa14@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>cfonsecarosa14@gmail.com</a><a href="tel:+351924153543"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg>+351 924 153 543</a></div>
+      <div class="ctas center" id="ctas2"><a class="btn primary" href="https://www.linkedin.com/in/cl%C3%A1udia-rosa-95681817a/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"></path></svg>LinkedIn</a><a class="btn" href="cv-claudia-rosa.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"></path></svg>Descarregar CV</a><a class="btn" href="mailto:cfonsecarosa14@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>Email</a><a class="btn" href="tel:+351924153543"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg>Telefone</a></div>
     </section>
   </main>
 
-  <footer class="wrap footer" id="footer"></footer>
+  <footer class="wrap footer" id="footer">© 2026 Cláudia Rosa</footer>
 
   <script src="data.js"></script>
   <script src="main.js"></script>
-</body>
-</html>
+
+
+</body></html>

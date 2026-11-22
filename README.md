@@ -17,3 +17,7 @@ Alternativa sem GitHub: `npx vercel` dentro desta pasta.
 ## Idiomas e CV
 - Os textos em português e inglês estão em `data.js` (`pt` e `en`). O link `?lang=en` abre o site em inglês.
 - Para regenerar os CVs em PDF depois de mudar `data.js`: `node tools/gerar-cv.js`
+
+## Depois de mudar data.js ou template.html
+1. `node tools/build.js`: gera `index.html` com o conteúdo já escrito (não editar `index.html` à mão)
+2. `node tools/gerar-cv.js`: gera os CVs em PDF
