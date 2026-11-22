@@ -98,7 +98,7 @@ window.SITE = {
       {
         cargo: "Marketing Trainee",
         empresa: "Flying Tiger Copenhagen",
-        logo: "logos/flying-tiger.png", linkedin: "https://www.linkedin.com/company/flyingtigercopenhagen/",
+        logo: "logos/flying-tiger.png", linkedin: "https://www.linkedin.com/company/flyingtigerportugal/",
         periodo: "fev 2022 — mai 2022",
         descricao: "Estágio na área de marketing.",
         destaques: [],
@@ -223,7 +223,7 @@ window.SITE = {
       {
         cargo: "Marketing Trainee",
         empresa: "Flying Tiger Copenhagen",
-        logo: "logos/flying-tiger.png", linkedin: "https://www.linkedin.com/company/flyingtigercopenhagen/",
+        logo: "logos/flying-tiger.png", linkedin: "https://www.linkedin.com/company/flyingtigerportugal/",
         periodo: "Feb 2022 — May 2022",
         descricao: "Marketing internship.",
         destaques: [],
