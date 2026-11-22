@@ -156,6 +156,24 @@
     new IntersectionObserver(([en]) => nav.classList.toggle("mostra-nome", !en.isIntersecting), { rootMargin: "-70px 0px 0px 0px" }).observe($("nome"));
   }
 
+  // Ao recarregar começa sempre no topo; links do menu não mudam o endereço
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  const limparHash = () => { if (location.hash) history.replaceState(null, "", location.pathname + location.search); };
+  window.addEventListener("load", () => {
+    const alvo = location.hash && document.getElementById(location.hash.slice(1));
+    if (alvo && !alvo.hidden) alvo.scrollIntoView(); else window.scrollTo(0, 0);
+    limparHash();
+  });
+  document.addEventListener("click", (ev) => {
+    const a = ev.target.closest('a[href^="#"]');
+    if (!a) return;
+    const id = a.getAttribute("href").slice(1);
+    const alvo = id ? document.getElementById(id) : null;
+    ev.preventDefault();
+    if (alvo) alvo.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+    else window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
   // Animação ao fazer scroll
   const io = "IntersectionObserver" in window
     ? new IntersectionObserver((entries) => entries.forEach((en) => {
