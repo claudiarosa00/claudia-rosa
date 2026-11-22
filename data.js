@@ -109,13 +109,16 @@ window.SITE = {
 
     competencias: [
       { grupo: "Media", itens: ["Estratégia de media", "Planeamento", "Compra de media", "Paid Social", "Google Ads", "Programmatic", "TV · Rádio · OOH · Imprensa", "Reporting e otimização"] },
-      { grupo: "Dados, Automação & AI", itens: ["Inteligência Artificial (AI)", "Python", "pandas", "Data-Driven Marketing", "Digital Analytics", "Data Science for Marketing", "Machine Learning", "Automação de processos"] },
+      { grupo: "Dados, Automação & AI", itens: ["Inteligência Artificial (AI)", "Python", "pandas", "SQL", "Power BI", "Data-Driven Marketing", "Digital Analytics", "Data Science for Marketing", "Machine Learning", "Automação de processos"] },
       { grupo: "Pessoais", itens: ["Problem-solving", "Pensamento crítico", "Capacidade de organização", "Proatividade", "Comunicação", "Trabalho em equipa"] },
     ],
 
     certificacoes: [
       { nome: "TikTok Media Buying Certification", emissor: "TikTok for Business", data: "2026", pdf: "", link: "https://www.credential.net/b71ee64f-2c02-4d34-99e2-31d61d002673?key=b41809fcd03b176f8cf08c61c64fab2ba6f2c18856a71967d04f153131a1f374" },
       { nome: "Google Ads Display Certification", emissor: "Google Skillshop", data: "2026", pdf: "", link: "https://www.credential.net/a2708979-e1ea-44fd-bc99-fee88590fa17" },
+      { nome: "Introduction to SQL", emissor: "DataCamp", data: "2025", pdf: "certificados/datacamp-introduction-to-sql.pdf" },
+      { nome: "Machine Learning for Business", emissor: "DataCamp", data: "2024", pdf: "certificados/datacamp-machine-learning-for-business.pdf" },
+      { nome: "Introduction to Power BI", emissor: "DataCamp", data: "2024", pdf: "certificados/datacamp-introduction-to-power-bi.pdf" },
       { nome: "Data Manipulation with pandas", emissor: "DataCamp", data: "2024", pdf: "certificados/datacamp-data-manipulation-pandas.pdf" },
       { nome: "Intermediate Python", emissor: "DataCamp", data: "2024", pdf: "certificados/datacamp-intermediate-python.pdf" },
       { nome: "Understanding Machine Learning", emissor: "DataCamp", data: "2024", pdf: "certificados/datacamp-understanding-machine-learning.pdf" },
@@ -232,13 +235,16 @@ window.SITE = {
 
     competencias: [
       { grupo: "Media", itens: ["Media strategy", "Planning", "Media buying", "Paid Social", "Google Ads", "Programmatic", "TV · Radio · OOH · Print", "Reporting & optimisation"] },
-      { grupo: "Data, Automation & AI", itens: ["Artificial Intelligence (AI)", "Python", "pandas", "Data-Driven Marketing", "Digital Analytics", "Data Science for Marketing", "Machine Learning", "Process automation"] },
+      { grupo: "Data, Automation & AI", itens: ["Artificial Intelligence (AI)", "Python", "pandas", "SQL", "Power BI", "Data-Driven Marketing", "Digital Analytics", "Data Science for Marketing", "Machine Learning", "Process automation"] },
       { grupo: "Personal", itens: ["Problem-solving", "Critical thinking", "Organisation", "Proactivity", "Communication", "Teamwork"] },
     ],
 
     certificacoes: [
       { nome: "TikTok Media Buying Certification", emissor: "TikTok for Business", data: "2026", pdf: "", link: "https://www.credential.net/b71ee64f-2c02-4d34-99e2-31d61d002673?key=b41809fcd03b176f8cf08c61c64fab2ba6f2c18856a71967d04f153131a1f374" },
       { nome: "Google Ads Display Certification", emissor: "Google Skillshop", data: "2026", pdf: "", link: "https://www.credential.net/a2708979-e1ea-44fd-bc99-fee88590fa17" },
+      { nome: "Introduction to SQL", emissor: "DataCamp", data: "2025", pdf: "certificados/datacamp-introduction-to-sql.pdf" },
+      { nome: "Machine Learning for Business", emissor: "DataCamp", data: "2024", pdf: "certificados/datacamp-machine-learning-for-business.pdf" },
+      { nome: "Introduction to Power BI", emissor: "DataCamp", data: "2024", pdf: "certificados/datacamp-introduction-to-power-bi.pdf" },
       { nome: "Data Manipulation with pandas", emissor: "DataCamp", data: "2024", pdf: "certificados/datacamp-data-manipulation-pandas.pdf" },
       { nome: "Intermediate Python", emissor: "DataCamp", data: "2024", pdf: "certificados/datacamp-intermediate-python.pdf" },
       { nome: "Understanding Machine Learning", emissor: "DataCamp", data: "2024", pdf: "certificados/datacamp-understanding-machine-learning.pdf" },
