@@ -61,11 +61,11 @@ window.SITE = {
     cvExtra: {
       experiencia: [
         {
-          descricao: "Planeamento, compra e gestão de campanhas multicanal: TV, rádio, digital, OOH e imprensa.",
+          descricao: "Planeamento, compra e gestão de campanhas multicanal (TV, rádio, digital, OOH e imprensa), em articulação com AdOps, Programmatic e Research.",
           destaques: [
             "Criei, com a ajuda de AI, uma ferramenta interna, hoje usada por muitas pessoas na empresa, que transformou uma tarefa repetitiva e morosa num processo simples e rápido",
-            "Compra direta em Meta, TikTok, LinkedIn e Google, em articulação com AdOps, Programmatic e Research",
-            "Clientes de mobilidade, energia, saúde, automóvel e luxo, com equipas em Espanha e França",
+            "Faço compra direta de media em Meta, TikTok, LinkedIn e Google",
+            "Trabalho com clientes de mobilidade, energia, saúde, automóvel e luxo, em colaboração com equipas em Espanha e França",
           ],
         },
         { descricao: "Apoio ao planeamento, implementação e análise de campanhas multicanal.", destaques: [] },
@@ -102,13 +102,12 @@ window.SITE = {
         logo: "logos/arena-media.png", linkedin: "https://www.linkedin.com/company/arena-media-portugal/",
         periodo: "jul 2023 — Presente",
         descricao:
-          "Planeamento, compra e gestão de campanhas multicanal em TV, rádio, digital, outdoor e imprensa, desenvolvendo estratégias integradas em conjunto com as equipas de AdOps, Programmatic, Conteúdo e Research.",
+          "Planeamento, compra e gestão de campanhas multicanal (TV, rádio, digital, OOH e imprensa), em articulação com as equipas de AdOps, Programmatic, Conteúdo e Research.",
         destaques: [
           "Criei, com a ajuda de AI, uma ferramenta interna, hoje usada por muitas pessoas na empresa, que transformou uma tarefa repetitiva e morosa num processo simples e rápido",
-          "Compra direta de media em Paid Social (Meta, TikTok, LinkedIn) e Google",
-          "Melhoria dos fluxos de reporting e planeamento, com templates e automação de tarefas repetitivas",
-          "Clientes de mobilidade, energia, saúde, automóvel, luxo e bebidas espirituosas",
-          "Colaboração internacional com equipas em Espanha e França",
+          "Otimizei os fluxos de reporting e planeamento, com templates e automação de tarefas",
+          "Faço compra direta de media em Meta, TikTok, LinkedIn e Google",
+          "Trabalho com clientes de mobilidade, energia, saúde, automóvel, luxo e bebidas espirituosas, em colaboração com equipas em Espanha e França",
         ],
       },
       {
@@ -211,11 +210,11 @@ window.SITE = {
     cvExtra: {
       experiencia: [
         {
-          descricao: "Planning, buying and managing multi-channel campaigns: TV, radio, digital, OOH and print.",
+          descricao: "Planning, buying and managing multi-channel campaigns (TV, radio, digital, OOH and print), working with AdOps, Programmatic and Research.",
           destaques: [
             "Built, with the help of AI, an internal tool, now used by many people across the company, that turned a repetitive, time-consuming task into a quick and simple process",
-            "Direct buying on Meta, TikTok, LinkedIn and Google, working with AdOps, Programmatic and Research",
-            "Clients in mobility, energy, healthcare, automotive and luxury, with teams in Spain and France",
+            "Buy media directly on Meta, TikTok, LinkedIn and Google",
+            "Work with clients in mobility, energy, healthcare, automotive and luxury, collaborating with teams in Spain and France",
           ],
         },
         { descricao: "Supported the planning, implementation and analysis of multi-channel campaigns.", destaques: [] },
@@ -252,13 +251,12 @@ window.SITE = {
         logo: "logos/arena-media.png", linkedin: "https://www.linkedin.com/company/arena-media-portugal/",
         periodo: "Jul 2023 — Present",
         descricao:
-          "I plan, buy and manage multi-channel media campaigns across TV, radio, digital, outdoor and print, developing integrated strategies together with the AdOps, Programmatic, Content and Research teams.",
+          "Planning, buying and managing multi-channel campaigns (TV, radio, digital, OOH and print), working closely with the AdOps, Programmatic, Content and Research teams.",
         destaques: [
           "Built, with the help of AI, an internal tool, now used by many people across the company, that turned a repetitive, time-consuming task into a quick and simple process",
-          "Direct media buying in Paid Social (Meta, TikTok, LinkedIn) and Google",
-          "Improved reporting and planning workflows with templates and automation of repetitive tasks",
-          "Clients in mobility, energy, healthcare, automotive, luxury and spirits",
-          "International collaboration with teams in Spain and France",
+          "Optimised reporting and planning workflows with templates and task automation",
+          "Buy media directly on Meta, TikTok, LinkedIn and Google",
+          "Work with clients in mobility, energy, healthcare, automotive, luxury and spirits, collaborating with teams in Spain and France",
         ],
       },
       {
