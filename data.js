@@ -85,7 +85,7 @@ window.SITE = {
 
     sobre: [
       "Sou **Media Expert** com 4 anos de experiência em estratégias de media integradas, digitais e offline. Acompanho todo o ciclo das campanhas, da estratégia e planeamento à compra, otimização e análise, com experiência prática em **Meta, TikTok, LinkedIn e Google**, e em TV, rádio, OOH e imprensa.",
-      "O que mais me motiva é **encontrar formas de melhorar o que já existe e transformar problemas em soluções práticas** para a equipa. Gosto de olhar para os processos com outros olhos: melhorei fluxos de reporting e planeamento, criei templates e automatizei tarefas repetitivas.",
+      "O que mais me motiva é **encontrar formas de melhorar o que já existe e transformar problemas em soluções práticas** para a equipa. Gosto de questionar a forma como as coisas sempre foram feitas: melhorei fluxos de reporting e planeamento, criei templates e automatizei tarefas repetitivas.",
       "Trabalho todos os dias com **AI (ChatGPT, Claude e Microsoft Copilot)** para analisar informação, automatizar tarefas e criar ferramentas que simplificam o trabalho da equipa, mesmo sem ser programadora. Interessa-me sobretudo a interseção entre media, dados e AI.",
     ],
 
@@ -235,7 +235,7 @@ window.SITE = {
 
     sobre: [
       "I'm a **Media Expert** with 4 years of experience in integrated media strategies across digital and offline channels. I cover the full campaign lifecycle, from strategy and planning to buying, optimisation and analysis, with hands-on experience in **Meta, TikTok, LinkedIn and Google**, as well as TV, radio, OOH and print.",
-      "What drives me most is **finding ways to improve what already exists and turning problems into practical solutions** for the team. I like to look at processes with fresh eyes: I've improved reporting and planning workflows, built templates and automated repetitive tasks.",
+      "What drives me most is **finding ways to improve what already exists and turning problems into practical solutions** for the team. I like to challenge the way things have always been done: I've improved reporting and planning workflows, built templates and automated repetitive tasks.",
       "I work with **AI (ChatGPT, Claude and Microsoft Copilot)** every day to analyse information, automate tasks and build tools that make the team's work easier, even though I'm not a developer. I'm especially interested in the intersection of media, data and AI.",
     ],
 
