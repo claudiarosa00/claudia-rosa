@@ -63,7 +63,7 @@ window.SITE = {
         {
           descricao: "Planeamento, compra e gestão de campanhas multicanal: TV, rádio, digital, OOH e imprensa.",
           destaques: [
-            "Criei, com AI, uma ferramenta interna usada por muitas pessoas na empresa, que reduziu uma tarefa repetitiva para cerca de 2 minutos",
+            "Criei, com a ajuda de AI, uma ferramenta interna, hoje usada por muitas pessoas na empresa, que transformou uma tarefa repetitiva e morosa num processo simples e rápido",
             "Compra direta em Meta, TikTok, LinkedIn e Google, em articulação com AdOps, Programmatic e Research",
             "Clientes de mobilidade, energia, saúde, automóvel e luxo, com equipas em Espanha e França",
           ],
@@ -104,7 +104,7 @@ window.SITE = {
         descricao:
           "Planeamento, compra e gestão de campanhas multicanal em TV, rádio, digital, outdoor e imprensa, desenvolvendo estratégias integradas em conjunto com as equipas de AdOps, Programmatic, Conteúdo e Research.",
         destaques: [
-          "Criei, com a ajuda de AI (ChatGPT, Claude e Copilot), uma ferramenta interna hoje usada por muitas pessoas na empresa, que reduziu uma tarefa repetitiva para cerca de 2 minutos",
+          "Criei, com a ajuda de AI, uma ferramenta interna, hoje usada por muitas pessoas na empresa, que transformou uma tarefa repetitiva e morosa num processo simples e rápido",
           "Compra direta de media em Paid Social (Meta, TikTok, LinkedIn) e Google",
           "Melhoria dos fluxos de reporting e planeamento, com templates e automação de tarefas repetitivas",
           "Clientes de mobilidade, energia, saúde, automóvel, luxo e bebidas espirituosas",
@@ -213,7 +213,7 @@ window.SITE = {
         {
           descricao: "Planning, buying and managing multi-channel campaigns: TV, radio, digital, OOH and print.",
           destaques: [
-            "Built, with AI, an internal tool used by many people across the company, cutting a repetitive task down to about 2 minutes",
+            "Built, with the help of AI, an internal tool, now used by many people across the company, that turned a repetitive, time-consuming task into a quick and simple process",
             "Direct buying on Meta, TikTok, LinkedIn and Google, working with AdOps, Programmatic and Research",
             "Clients in mobility, energy, healthcare, automotive and luxury, with teams in Spain and France",
           ],
@@ -254,7 +254,7 @@ window.SITE = {
         descricao:
           "I plan, buy and manage multi-channel media campaigns across TV, radio, digital, outdoor and print, developing integrated strategies together with the AdOps, Programmatic, Content and Research teams.",
         destaques: [
-          "Built, with the help of AI (ChatGPT, Claude and Copilot), an internal tool now used by many people across the company, cutting a repetitive task down to about 2 minutes",
+          "Built, with the help of AI, an internal tool, now used by many people across the company, that turned a repetitive, time-consuming task into a quick and simple process",
           "Direct media buying in Paid Social (Meta, TikTok, LinkedIn) and Google",
           "Improved reporting and planning workflows with templates and automation of repetitive tasks",
           "Clients in mobility, energy, healthcare, automotive, luxury and spirits",
