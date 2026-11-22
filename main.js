@@ -43,7 +43,8 @@
     $("contact-info").innerHTML = info.join("");
 
     // Topo
-    $("logo").textContent = C.iniciais || C.nome;
+    $("logo").innerHTML = `<span class="logo-mark" aria-hidden="true">${esc(C.iniciais)}</span><span class="logo-txt"><b>${esc(C.nome)}</b><small>${esc(S.cargo.split(/ (na|at) /)[0])}</small></span>`;
+    $("logo").setAttribute("aria-label", C.nome);
     $("nome").textContent = C.nome;
     $("cargo").textContent = S.cargo + (S.localizacao ? " · " + S.localizacao : "");
     $("frase").textContent = S.frase;
