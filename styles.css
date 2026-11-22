@@ -376,3 +376,11 @@ body {
 .edu-item { display: flex; align-items: center; gap: 14px; }
 .edu-item b { display: block; }
 @media (max-width: 760px) { .org-logo { width: 38px; height: 38px; } }
+
+/* links para o LinkedIn das empresas/faculdades */
+.org-link { text-decoration: none; display: inline-flex; flex: none; }
+.org-link:hover .org-logo { border-color: var(--accent); box-shadow: var(--shadow); }
+.org-link .empresa, .org-link .inst { text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 3px; transition: text-decoration-color .15s; }
+.org-link:hover .empresa, .org-link:hover .inst { text-decoration-color: currentColor; }
+.edu-item .org-link .inst { color: var(--accent); font-weight: 500; }
+.edu-item span .org-link { display: inline; }

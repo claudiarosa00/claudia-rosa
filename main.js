@@ -3,6 +3,8 @@
   const $ = (id) => document.getElementById(id);
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const rich = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+  // envolve conteúdo num link para o LinkedIn da empresa/faculdade (se existir)
+  const li = (url, html, label) => url ? `<a class="org-link" href="${esc(url)}" target="_blank" rel="noopener" aria-label="${esc(label)}">${html}</a>` : html;
   const tel = (t) => "tel:" + t.replace(/\s/g, "");
 
   const icons = {
@@ -81,7 +83,7 @@
     // Experiência
     $("timeline").innerHTML = S.experiencia.map((e) => `
       <li class="reveal">
-        <div class="top"><div class="org">${e.logo ? `<img class="org-logo" src="${esc(e.logo)}" alt="${esc(e.empresa)}" width="44" height="44" loading="lazy">` : ""}<h3>${esc(e.cargo)} · <span class="empresa">${esc(e.empresa)}</span></h3></div><span class="periodo">${esc(e.periodo)}</span></div>
+        <div class="top"><div class="org">${e.logo ? li(e.linkedin, `<img class="org-logo" src="${esc(e.logo)}" alt="${esc(e.empresa)}" width="44" height="44" loading="lazy">`, e.empresa + (lang === "en" ? " on LinkedIn" : " no LinkedIn")) : ""}<h3>${esc(e.cargo)} · ${li(e.linkedin, `<span class="empresa">${esc(e.empresa)}</span>`)}</h3></div><span class="periodo">${esc(e.periodo)}</span></div>
         ${e.descricao ? `<p>${esc(e.descricao)}</p>` : ""}
         ${e.destaques && e.destaques.length ? `<ul>${e.destaques.map((d) => `<li>${esc(d)}</li>`).join("")}</ul>` : ""}
       </li>`).join("");
@@ -138,7 +140,7 @@
     show("projetos", P.length);
 
     // Formação
-    $("formacao-lista").innerHTML = S.formacao.map((f) => `<li class="reveal edu-item">${f.logo ? `<img class="org-logo" src="${esc(f.logo)}" alt="${esc(f.instituicao.split(" · ")[0])}" width="44" height="44" loading="lazy">` : ""}<div><b>${esc(f.curso)}</b><span>${esc(f.instituicao)} · ${esc(f.periodo)}</span></div></li>`).join("");
+    $("formacao-lista").innerHTML = S.formacao.map((f) => `<li class="reveal edu-item">${f.logo ? li(f.linkedin, `<img class="org-logo" src="${esc(f.logo)}" alt="${esc(f.instituicao.split(" · ")[0])}" width="44" height="44" loading="lazy">`, f.instituicao.split(" · ")[0] + (lang === "en" ? " on LinkedIn" : " no LinkedIn")) : ""}<div><b>${esc(f.curso)}</b><span>${li(f.linkedin, `<span class="inst">${esc(f.instituicao.split(" · ")[0])}</span>`)}${f.instituicao.includes(" · ") ? " · " + esc(f.instituicao.split(" · ").slice(1).join(" · ")) : ""} · ${esc(f.periodo)}</span></div></li>`).join("");
     $("idiomas").innerHTML = S.idiomas.map((i) => `<li>${esc(i)}</li>`).join("");
 
     $("footer").textContent = `© ${new Date().getFullYear()} ${C.nome}`;

@@ -74,7 +74,7 @@ window.SITE = {
       {
         cargo: "Media Expert",
         empresa: "Arena Media Portugal",
-        logo: "logos/arena-media.png",
+        logo: "logos/arena-media.png", linkedin: "https://www.linkedin.com/company/arena-media-portugal/",
         periodo: "jul 2023 — Presente",
         descricao:
           "Planeamento, compra e gestão de campanhas multicanal em TV, rádio, digital, outdoor e imprensa, desenvolvendo estratégias integradas em conjunto com as equipas de AdOps, Programmatic, Conteúdo e Research.",
@@ -89,7 +89,7 @@ window.SITE = {
       {
         cargo: "Associate Media Expert",
         empresa: "Arena Media Portugal",
-        logo: "logos/arena-media.png",
+        logo: "logos/arena-media.png", linkedin: "https://www.linkedin.com/company/arena-media-portugal/",
         periodo: "jul 2022 — jun 2023",
         descricao:
           "Apoio ao planeamento, implementação e análise de campanhas de media multicanal, em contacto diário com clientes, parceiros de media e equipas internas.",
@@ -98,7 +98,7 @@ window.SITE = {
       {
         cargo: "Marketing Trainee",
         empresa: "Flying Tiger Copenhagen",
-        logo: "logos/flying-tiger.png",
+        logo: "logos/flying-tiger.png", linkedin: "https://www.linkedin.com/company/flyingtigercopenhagen/",
         periodo: "fev 2022 — mai 2022",
         descricao: "Estágio na área de marketing.",
         destaques: [],
@@ -135,8 +135,8 @@ window.SITE = {
     projetos: [], // vazio = a secção não aparece
 
     formacao: [
-      { curso: "Mestrado em Data-Driven Marketing", instituicao: "NOVA IMS · 16 valores", periodo: "2023 — 2025", logo: "logos/nova-ims.png" },
-      { curso: "Licenciatura em Marketing", instituicao: "IPAM · 16 valores", periodo: "2019 — 2022", logo: "logos/ipam.png" },
+      { curso: "Mestrado em Data-Driven Marketing", instituicao: "NOVA IMS · 16 valores", periodo: "2023 — 2025", logo: "logos/nova-ims.png", linkedin: "https://www.linkedin.com/school/nova-ims-information-management-school/" },
+      { curso: "Licenciatura em Marketing", instituicao: "IPAM · 16 valores", periodo: "2019 — 2022", logo: "logos/ipam.png", linkedin: "" /* falta o link do IPAM */ },
     ],
 
     idiomas: ["Português (nativo)", "Inglês (avançado)"],
@@ -199,7 +199,7 @@ window.SITE = {
       {
         cargo: "Media Expert",
         empresa: "Arena Media Portugal",
-        logo: "logos/arena-media.png",
+        logo: "logos/arena-media.png", linkedin: "https://www.linkedin.com/company/arena-media-portugal/",
         periodo: "Jul 2023 — Present",
         descricao:
           "I plan, buy and manage multi-channel media campaigns across TV, radio, digital, outdoor and print, developing integrated strategies together with the AdOps, Programmatic, Content and Research teams.",
@@ -214,7 +214,7 @@ window.SITE = {
       {
         cargo: "Associate Media Expert",
         empresa: "Arena Media Portugal",
-        logo: "logos/arena-media.png",
+        logo: "logos/arena-media.png", linkedin: "https://www.linkedin.com/company/arena-media-portugal/",
         periodo: "Jul 2022 — Jun 2023",
         descricao:
           "Supported the planning, implementation and analysis of multi-channel media campaigns, in daily contact with clients, media partners and internal teams.",
@@ -223,7 +223,7 @@ window.SITE = {
       {
         cargo: "Marketing Trainee",
         empresa: "Flying Tiger Copenhagen",
-        logo: "logos/flying-tiger.png",
+        logo: "logos/flying-tiger.png", linkedin: "https://www.linkedin.com/company/flyingtigercopenhagen/",
         periodo: "Feb 2022 — May 2022",
         descricao: "Marketing internship.",
         destaques: [],
@@ -260,8 +260,8 @@ window.SITE = {
     projetos: [],
 
     formacao: [
-      { curso: "Master's in Data-Driven Marketing", instituicao: "NOVA IMS · Grade 16/20", periodo: "2023 — 2025", logo: "logos/nova-ims.png" },
-      { curso: "Bachelor's in Marketing", instituicao: "IPAM · Grade 16/20", periodo: "2019 — 2022", logo: "logos/ipam.png" },
+      { curso: "Master's in Data-Driven Marketing", instituicao: "NOVA IMS · Grade 16/20", periodo: "2023 — 2025", logo: "logos/nova-ims.png", linkedin: "https://www.linkedin.com/school/nova-ims-information-management-school/" },
+      { curso: "Bachelor's in Marketing", instituicao: "IPAM · Grade 16/20", periodo: "2019 — 2022", logo: "logos/ipam.png", linkedin: "" /* falta o link do IPAM */ },
     ],
 
     idiomas: ["Portuguese (native)", "English (advanced)"],
