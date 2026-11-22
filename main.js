@@ -81,7 +81,7 @@
     // Experiência
     $("timeline").innerHTML = S.experiencia.map((e) => `
       <li class="reveal">
-        <div class="top"><h3>${esc(e.cargo)} · <span class="empresa">${esc(e.empresa)}</span></h3><span class="periodo">${esc(e.periodo)}</span></div>
+        <div class="top"><div class="org">${e.logo ? `<img class="org-logo" src="${esc(e.logo)}" alt="${esc(e.empresa)}" width="44" height="44" loading="lazy">` : ""}<h3>${esc(e.cargo)} · <span class="empresa">${esc(e.empresa)}</span></h3></div><span class="periodo">${esc(e.periodo)}</span></div>
         ${e.descricao ? `<p>${esc(e.descricao)}</p>` : ""}
         ${e.destaques && e.destaques.length ? `<ul>${e.destaques.map((d) => `<li>${esc(d)}</li>`).join("")}</ul>` : ""}
       </li>`).join("");
@@ -138,7 +138,7 @@
     show("projetos", P.length);
 
     // Formação
-    $("formacao-lista").innerHTML = S.formacao.map((f) => `<li class="reveal"><b>${esc(f.curso)}</b><span>${esc(f.instituicao)} · ${esc(f.periodo)}</span></li>`).join("");
+    $("formacao-lista").innerHTML = S.formacao.map((f) => `<li class="reveal edu-item">${f.logo ? `<img class="org-logo" src="${esc(f.logo)}" alt="${esc(f.instituicao.split(" · ")[0])}" width="44" height="44" loading="lazy">` : ""}<div><b>${esc(f.curso)}</b><span>${esc(f.instituicao)} · ${esc(f.periodo)}</span></div></li>`).join("");
     $("idiomas").innerHTML = S.idiomas.map((i) => `<li>${esc(i)}</li>`).join("");
 
     $("footer").textContent = `© ${new Date().getFullYear()} ${C.nome}`;

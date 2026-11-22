@@ -11,6 +11,7 @@ vm.runInNewContext(fs.readFileSync(path.join(raiz, "data.js"), "utf8"), ctx);
 const SITE = ctx.window.SITE;
 const C = SITE.comum;
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const img = (p) => "data:image/png;base64," + fs.readFileSync(path.join(raiz, p)).toString("base64");
 const foto = "data:image/jpeg;base64," + fs.readFileSync(path.join(raiz, C.foto)).toString("base64");
 
 const rotulos = {
@@ -67,6 +68,8 @@ ul.simples span { display: block; color: #5d6370; font-size: 8pt; }
 .caso p { color: #353a45; margin-bottom: .8mm; } .caso b { color: #16181d; }
 .edu { display: flex; justify-content: space-between; gap: 4mm; margin-bottom: 1.8mm; }
 .edu span { color: #5d6370; }
+.lg { width: 5.2mm; height: 5.2mm; object-fit: contain; border-radius: 1.2mm; border: 1px solid #e4e4ec; vertical-align: -1.4mm; margin-right: 2mm; background: #fff; }
+.edu-l { display: flex; align-items: center; } .edu-l .lg { width: 7mm; height: 7mm; margin-right: 2.5mm; }
 .certs li { margin-bottom: 1.6mm; } .certs a { text-decoration: none; border-bottom: 1px solid #c9d3f5; } .edu .per { font-size: 8.3pt; white-space: nowrap; }
 </style></head><body>
 <aside>
@@ -89,7 +92,7 @@ ul.simples span { display: block; color: #5d6370; font-size: 8pt; }
   <header><h1>${esc(C.nome)}</h1><p class="cargo">${esc(S.cargo)}</p></header>
   <section><h2>${R.perfil}</h2><p class="perfil">${esc(S.resumoCV)}</p></section>
   <section><h2>${R.experiencia}</h2>
-    ${S.experiencia.map((e) => `<div class="job"><div class="top"><h3>${esc(e.cargo)} · <span class="emp">${esc(e.empresa)}</span></h3><span class="per">${esc(e.periodo)}</span></div>
+    ${S.experiencia.map((e) => `<div class="job"><div class="top"><h3>${e.logo ? `<img class="lg" src="${img(e.logo)}">` : ""}${esc(e.cargo)} · <span class="emp">${esc(e.empresa)}</span></h3><span class="per">${esc(e.periodo)}</span></div>
       <p>${esc(e.descricao)}</p>${e.destaques.length ? `<ul>${e.destaques.map((d) => `<li>${esc(d)}</li>`).join("")}</ul>` : ""}</div>`).join("")}
   </section>
   ${caso ? `<section><h2>${R.caso}</h2><div class="caso"><h3>${esc(caso.titulo)}</h3>
@@ -97,7 +100,7 @@ ul.simples span { display: block; color: #5d6370; font-size: 8pt; }
     <p><b>${esc(S.ui.solucao)}:</b> ${esc(caso.solucao)}</p>
     <p><b>${esc(S.ui.resultado)}:</b> ${esc(caso.resultado)}</p></div></section>` : ""}
   <section><h2>${R.formacao}</h2>
-    ${S.formacao.map((f) => `<div class="edu"><div><b>${esc(f.curso)}</b><br><span>${esc(f.instituicao)}</span></div><span class="per">${esc(f.periodo)}</span></div>`).join("")}
+    ${S.formacao.map((f) => `<div class="edu"><div class="edu-l">${f.logo ? `<img class="lg" src="${img(f.logo)}">` : ""}<div><b>${esc(f.curso)}</b><br><span>${esc(f.instituicao)}</span></div></div><span class="per">${esc(f.periodo)}</span></div>`).join("")}
   </section>
   <section><h2>${R.certificacoes}</h2><ul class="simples certs">
     ${certsCV(S.certificacoes || [])}
