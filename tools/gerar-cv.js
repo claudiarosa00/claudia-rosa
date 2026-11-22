@@ -84,7 +84,6 @@ ul.simples span { display: block; color: #5d6370; font-size: 8pt; }
   ${(S.ferramentas || []).length ? `<section><h2>${R.ferramentas}</h2>
     ${S.ferramentas.map((g) => `<div class="grupo"><h3>${esc(g.grupo)}</h3><p>${g.itens.map(esc).join(" · ")}</p></div>`).join("")}
   </section>` : ""}
-  <section><h2>${R.idiomas}</h2><ul class="simples">${S.idiomas.map((i) => `<li>${esc(i)}</li>`).join("")}</ul></section>
 </aside>
 <main>
   <header><h1>${esc(C.nome)}</h1><p class="cargo">${esc(S.cargo)}</p></header>
@@ -103,6 +102,7 @@ ul.simples span { display: block; color: #5d6370; font-size: 8pt; }
   <section><h2>${R.certificacoes}</h2><ul class="simples certs">
     ${certsCV(S.certificacoes || [])}
   </ul></section>
+  <section><h2>${R.idiomas}</h2><p>${S.idiomas.map(esc).join(" · ")}</p></section>
 </main></body></html>`;
 }
 
