@@ -18,6 +18,18 @@ const rotulos = {
   en: { perfil: "Profile", experiencia: "Professional experience", formacao: "Education", contacto: "Contact", competencias: "Skills", idiomas: "Languages", certificacoes: "Certifications", caso: "Featured case", site: "Portfolio" },
 };
 
+// Certificações do mesmo emissor (ex.: DataCamp) ficam agrupadas numa linha no CV
+function certsCV(lista) {
+  const link = (c, txt) => (c.pdf || c.link) ? `<a href="${esc(c.pdf ? "https://claudia-rosa.vercel.app/" + c.pdf : c.link)}" style="color:inherit">${txt}</a>` : txt;
+  const porEmissor = {};
+  lista.forEach((c) => (porEmissor[c.emissor] = porEmissor[c.emissor] || []).push(c));
+  return Object.entries(porEmissor).map(([emissor, cs]) => {
+    if (cs.length === 1) { const c = cs[0]; return `<li>${link(c, esc(c.nome) + ((c.pdf || c.link) ? " ↗" : ""))}<span>${esc(emissor)} · ${esc(c.data)}</span></li>`; }
+    const anos = [...new Set(cs.map((c) => c.data))].sort();
+    return `<li>${cs.map((c) => link(c, esc(c.nome))).join(" · ")}<span>${esc(emissor)} · ${anos.length > 1 ? anos[0] + "–" + anos[anos.length - 1] : anos[0]}</span></li>`;
+  }).join("");
+}
+
 function html(lang) {
   const S = SITE[lang], R = rotulos[lang], L = C.links;
   const caso = (S.casos || [])[0];
@@ -54,7 +66,8 @@ ul.simples span { display: block; color: #5d6370; font-size: 8pt; }
 .caso h3 { font-size: 10pt; font-weight: 600; margin-bottom: 1mm; }
 .caso p { color: #353a45; margin-bottom: .8mm; } .caso b { color: #16181d; }
 .edu { display: flex; justify-content: space-between; gap: 4mm; margin-bottom: 1.8mm; }
-.edu span { color: #5d6370; } .edu .per { font-size: 8.3pt; white-space: nowrap; }
+.edu span { color: #5d6370; }
+.certs li { margin-bottom: 1.6mm; } .certs a { text-decoration: none; border-bottom: 1px solid #c9d3f5; } .edu .per { font-size: 8.3pt; white-space: nowrap; }
 </style></head><body>
 <aside>
   <img class="foto" src="${foto}" alt="">
@@ -68,9 +81,6 @@ ul.simples span { display: block; color: #5d6370; font-size: 8pt; }
   <section><h2>${R.competencias}</h2>
     ${S.competencias.map((g) => `<div class="grupo"><h3>${esc(g.grupo)}</h3><p>${g.itens.map(esc).join(" · ")}</p></div>`).join("")}
   </section>
-  <section><h2>${R.certificacoes}</h2><ul class="simples">
-    ${(S.certificacoes || []).map((c) => `<li>${(c.pdf || c.link) ? `<a href="${esc(c.pdf ? "https://claudia-rosa.vercel.app/" + c.pdf : c.link)}" style="color:inherit">${esc(c.nome)} ↗</a>` : esc(c.nome)}<span>${esc(c.emissor)} · ${esc(c.data)}</span></li>`).join("")}
-  </ul></section>
   <section><h2>${R.idiomas}</h2><ul class="simples">${S.idiomas.map((i) => `<li>${esc(i)}</li>`).join("")}</ul></section>
 </aside>
 <main>
@@ -87,6 +97,9 @@ ul.simples span { display: block; color: #5d6370; font-size: 8pt; }
   <section><h2>${R.formacao}</h2>
     ${S.formacao.map((f) => `<div class="edu"><div><b>${esc(f.curso)}</b><br><span>${esc(f.instituicao)}</span></div><span class="per">${esc(f.periodo)}</span></div>`).join("")}
   </section>
+  <section><h2>${R.certificacoes}</h2><ul class="simples certs">
+    ${certsCV(S.certificacoes || [])}
+  </ul></section>
 </main></body></html>`;
 }
 
