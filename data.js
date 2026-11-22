@@ -64,7 +64,7 @@ window.SITE = {
           descricao: "Planeamento, compra e gestão de campanhas multicanal (TV, rádio, digital, OOH e imprensa), em articulação com AdOps, Programmatic e Research.",
           destaques: [
             "Criei, com a ajuda de AI, uma ferramenta interna, hoje usada por muitas pessoas na empresa, que transformou uma tarefa repetitiva e morosa num processo simples e rápido",
-            "Faço compra direta de media em Meta, TikTok, LinkedIn e Google",
+            "Implemento campanhas em Meta, TikTok, LinkedIn e Google",
             "Trabalho com clientes de mobilidade, energia, saúde, automóvel e luxo, em colaboração com equipas em Espanha e França",
           ],
         },
@@ -106,7 +106,7 @@ window.SITE = {
         destaques: [
           "Criei, com a ajuda de AI, uma ferramenta interna, hoje usada por muitas pessoas na empresa, que transformou uma tarefa repetitiva e morosa num processo simples e rápido",
           "Otimizei os fluxos de reporting e planeamento, com templates e automação de tarefas",
-          "Faço compra direta de media em Meta, TikTok, LinkedIn e Google",
+          "Implemento campanhas em Meta, TikTok, LinkedIn e Google",
           "Trabalho com clientes de mobilidade, energia, saúde, automóvel, luxo e bebidas espirituosas, em colaboração com equipas em Espanha e França",
         ],
       },
@@ -213,7 +213,7 @@ window.SITE = {
           descricao: "Planning, buying and managing multi-channel campaigns (TV, radio, digital, OOH and print), working with AdOps, Programmatic and Research.",
           destaques: [
             "Built, with the help of AI, an internal tool, now used by many people across the company, that turned a repetitive, time-consuming task into a quick and simple process",
-            "Buy media directly on Meta, TikTok, LinkedIn and Google",
+            "Implement campaigns on Meta, TikTok, LinkedIn and Google",
             "Work with clients in mobility, energy, healthcare, automotive and luxury, collaborating with teams in Spain and France",
           ],
         },
@@ -255,7 +255,7 @@ window.SITE = {
         destaques: [
           "Built, with the help of AI, an internal tool, now used by many people across the company, that turned a repetitive, time-consuming task into a quick and simple process",
           "Optimised reporting and planning workflows with templates and task automation",
-          "Buy media directly on Meta, TikTok, LinkedIn and Google",
+          "Implement campaigns on Meta, TikTok, LinkedIn and Google",
           "Work with clients in mobility, energy, healthcare, automotive, luxury and spirits, collaborating with teams in Spain and France",
         ],
       },
