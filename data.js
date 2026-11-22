@@ -55,8 +55,33 @@ window.SITE = {
     frase:
       "Estratégias de media integradas, com olho para detetar problemas e vontade de os resolver, usando dados, automação e AI.",
 
+    // ---------- Versão resumida usada só no CV em PDF ----------
     resumoCV:
-      "Media Expert com 4 anos de experiência em estratégias de media integradas, do planeamento à compra, otimização e análise, em canais digitais e offline. Tenho facilidade em detetar problemas e transformá-los em soluções práticas, com dados, automação e AI. Criei uma ferramenta interna, hoje usada por muitas pessoas na empresa, que reduziu uma tarefa repetitiva para cerca de 2 minutos.",
+      "Media Expert com 4 anos de experiência em estratégias de media integradas, digitais e offline, do planeamento à compra, otimização e análise. Destaco-me por detetar problemas e resolvê-los com dados, automação e AI.",
+    cvExtra: {
+      experiencia: [
+        {
+          descricao: "Planeamento, compra e gestão de campanhas multicanal: TV, rádio, digital, OOH e imprensa.",
+          destaques: [
+            "Criei, com AI, uma ferramenta interna usada por muitas pessoas na empresa, que reduziu uma tarefa repetitiva para cerca de 2 minutos",
+            "Compra direta em Meta, TikTok, LinkedIn e Google, em articulação com AdOps, Programmatic e Research",
+            "Clientes de mobilidade, energia, saúde, automóvel e luxo, com equipas em Espanha e França",
+          ],
+        },
+        { descricao: "Apoio ao planeamento, implementação e análise de campanhas multicanal.", destaques: [] },
+        { descricao: "Estágio em marketing.", destaques: [] },
+      ],
+      competencias: [
+        { grupo: "Media", itens: ["Estratégia e planeamento", "Compra de media", "Paid Social", "Programmatic", "TV, rádio, OOH e imprensa", "Reporting"] },
+        { grupo: "Dados & AI", itens: ["Criação de ferramentas com AI", "Automação de processos", "Data-Driven Marketing"] },
+      ],
+      ferramentas: [
+        { grupo: "Media & Analytics", itens: ["Meta Ads", "TikTok Ads", "LinkedIn Ads", "Google Ads", "Google Analytics", "Yumi (Marktest)"] },
+        { grupo: "AI", itens: ["ChatGPT", "Claude", "Microsoft Copilot"] },
+        { grupo: "Produtividade", itens: ["Excel", "PowerPoint", "Google Workspace", "Canva", "Asana", "ClickUp"] },
+      ],
+      cursos: "cursos em dados e analytics",
+    },
 
     sobre: [
       "Sou **Media Expert** com 4 anos de experiência em estratégias de media integradas, digitais e offline. Acompanho todo o ciclo das campanhas, da estratégia e planeamento à compra, otimização e análise, com experiência prática em **Meta, TikTok, LinkedIn e Google**, e em TV, rádio, OOH e imprensa.",
@@ -180,8 +205,33 @@ window.SITE = {
     frase:
       "Integrated media strategies, with an eye for spotting problems and the drive to solve them, using data, automation and AI.",
 
+    // ---------- Shorter version used only in the PDF CV ----------
     resumoCV:
-      "Media Expert with 4 years of experience in integrated media strategies, from planning and buying to optimisation and analysis, across digital and offline channels. I have a knack for spotting problems and turning them into practical solutions with data, automation and AI. I built an internal tool, now used by many people across the company, that cut a repetitive task down to about 2 minutes.",
+      "Media Expert with 4 years of experience in integrated media strategies across digital and offline, from planning and buying to optimisation and analysis. I stand out for spotting problems and solving them with data, automation and AI.",
+    cvExtra: {
+      experiencia: [
+        {
+          descricao: "Planning, buying and managing multi-channel campaigns: TV, radio, digital, OOH and print.",
+          destaques: [
+            "Built, with AI, an internal tool used by many people across the company, cutting a repetitive task down to about 2 minutes",
+            "Direct buying on Meta, TikTok, LinkedIn and Google, working with AdOps, Programmatic and Research",
+            "Clients in mobility, energy, healthcare, automotive and luxury, with teams in Spain and France",
+          ],
+        },
+        { descricao: "Supported the planning, implementation and analysis of multi-channel campaigns.", destaques: [] },
+        { descricao: "Marketing internship.", destaques: [] },
+      ],
+      competencias: [
+        { grupo: "Media", itens: ["Strategy & planning", "Media buying", "Paid Social", "Programmatic", "TV, radio, OOH & print", "Reporting"] },
+        { grupo: "Data & AI", itens: ["AI-assisted tool building", "Process automation", "Data-Driven Marketing"] },
+      ],
+      ferramentas: [
+        { grupo: "Media & Analytics", itens: ["Meta Ads", "TikTok Ads", "LinkedIn Ads", "Google Ads", "Google Analytics", "Yumi (Marktest)"] },
+        { grupo: "AI", itens: ["ChatGPT", "Claude", "Microsoft Copilot"] },
+        { grupo: "Productivity", itens: ["Excel", "PowerPoint", "Google Workspace", "Canva", "Asana", "ClickUp"] },
+      ],
+      cursos: "courses in data & analytics",
+    },
 
     sobre: [
       "I'm a **Media Expert** with 4 years of experience in integrated media strategies across digital and offline channels. I cover the full campaign lifecycle, from strategy and planning to buying, optimisation and analysis, with hands-on experience in **Meta, TikTok, LinkedIn and Google**, as well as TV, radio, OOH and print.",

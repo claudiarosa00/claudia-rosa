@@ -20,26 +20,29 @@ const rotulos = {
 };
 
 // Certificações do mesmo emissor (ex.: DataCamp) ficam agrupadas numa linha no CV
-function certsCV(lista) {
+function certsCV(lista, cursos, lang) {
   const link = (c, txt) => (c.pdf || c.link) ? `<a href="${esc(c.pdf ? "https://claudia-rosa.vercel.app/" + c.pdf : c.link)}" style="color:inherit">${txt}</a>` : txt;
   const porEmissor = {};
   lista.forEach((c) => (porEmissor[c.emissor] = porEmissor[c.emissor] || []).push(c));
   return Object.entries(porEmissor).map(([emissor, cs]) => {
     if (cs.length === 1) { const c = cs[0]; return `<li>${link(c, esc(c.nome) + ((c.pdf || c.link) ? " ↗" : ""))}<span>${esc(emissor)} · ${esc(c.data)}</span></li>`; }
     const anos = [...new Set(cs.map((c) => c.data))].sort();
-    return `<li>${cs.map((c) => link(c, esc(c.nome))).join(" · ")}<span>${esc(emissor)} · ${anos.length > 1 ? anos[0] + "–" + anos[anos.length - 1] : anos[0]}</span></li>`;
+    const site = "https://claudia-rosa.vercel.app/" + (lang === "en" ? "?lang=en" : "") + "#certificacoes";
+    return `<li><a href="${site}" style="color:inherit">${esc(emissor)}: ${cs.length} ${esc(cursos || "")} ↗</a><span>${anos[0]}${anos.length > 1 ? "–" + anos[anos.length - 1] : ""}</span></li>`;
   }).join("");
 }
 
 function html(lang) {
-  const S = SITE[lang], R = rotulos[lang], L = C.links;
+  const S0 = SITE[lang], X = S0.cvExtra || {};
+  const S = { ...S0, competencias: X.competencias || S0.competencias, ferramentas: X.ferramentas || S0.ferramentas,
+    experiencia: S0.experiencia.map((e, i) => ({ ...e, ...((X.experiencia || [])[i] || {}) })) }, R = rotulos[lang], L = C.links;
   const caso = (S.casos || [])[0];
   return `<!doctype html><html lang="${lang}"><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
 <style>
 @page { size: A4; margin: 0; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: Inter, sans-serif; color: #16181d; font-size: 8.8pt; line-height: 1.4; width: 210mm; min-height: 297mm; display: grid; grid-template-columns: 66mm 1fr; }
+body { font-family: Inter, sans-serif; color: #16181d; font-size: 9.4pt; line-height: 1.5; width: 210mm; min-height: 297mm; display: grid; grid-template-columns: 66mm 1fr; }
 aside { background: #eef1fb; padding: 12mm 8mm 10mm 10mm; display: flex; flex-direction: column; gap: 5.5mm; }
 main { padding: 12mm 12mm 10mm 10mm; display: flex; flex-direction: column; gap: 4.5mm; }
 .foto { width: 32mm; height: 32mm; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 1mm; }
@@ -103,7 +106,7 @@ ul.simples span { display: block; color: #5d6370; font-size: 8pt; }
     ${S.formacao.map((f) => `<div class="edu"><div class="edu-l">${f.logo ? `<img class="lg" src="${img(f.logo)}">` : ""}<div><b>${esc(f.curso)}</b><br><span>${f.linkedin ? `<a href="${esc(f.linkedin)}" style="color:inherit;text-decoration:none">${esc(f.instituicao)}</a>` : esc(f.instituicao)}</span></div></div><span class="per">${esc(f.periodo)}</span></div>`).join("")}
   </section>
   <section><h2>${R.certificacoes}</h2><ul class="simples certs">
-    ${certsCV(S.certificacoes || [])}
+    ${certsCV(S.certificacoes || [], X.cursos, lang)}
   </ul></section>
   <section><h2>${R.idiomas}</h2><p>${S.idiomas.map(esc).join(" · ")}</p></section>
 </main></body></html>`;
