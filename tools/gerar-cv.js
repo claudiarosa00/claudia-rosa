@@ -69,7 +69,7 @@ ul.simples span { display: block; color: #5d6370; font-size: 8pt; }
     ${S.competencias.map((g) => `<div class="grupo"><h3>${esc(g.grupo)}</h3><p>${g.itens.map(esc).join(" · ")}</p></div>`).join("")}
   </section>
   <section><h2>${R.certificacoes}</h2><ul class="simples">
-    ${(S.certificacoes || []).map((c) => `<li>${esc(c.nome)}<span>${esc(c.emissor)} · ${esc(c.data)}</span></li>`).join("")}
+    ${(S.certificacoes || []).map((c) => `<li>${(c.pdf || c.link) ? `<a href="${esc(c.pdf ? "https://claudia-rosa.vercel.app/" + c.pdf : c.link)}" style="color:inherit">${esc(c.nome)} ↗</a>` : esc(c.nome)}<span>${esc(c.emissor)} · ${esc(c.data)}</span></li>`).join("")}
   </ul></section>
   <section><h2>${R.idiomas}</h2><ul class="simples">${S.idiomas.map((i) => `<li>${esc(i)}</li>`).join("")}</ul></section>
 </aside>

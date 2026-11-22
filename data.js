@@ -114,8 +114,8 @@ window.SITE = {
     ],
 
     certificacoes: [
-      { nome: "TikTok Media Buying Professional", emissor: "TikTok for Business", data: "2026", pdf: "" },
-      { nome: "Google Ads Display Certification", emissor: "Google Skillshop", data: "2026", pdf: "" },
+      { nome: "TikTok Media Buying Certification", emissor: "TikTok for Business", data: "2026", pdf: "", link: "https://www.credential.net/b71ee64f-2c02-4d34-99e2-31d61d002673?key=b41809fcd03b176f8cf08c61c64fab2ba6f2c18856a71967d04f153131a1f374" },
+      { nome: "Google Ads Display Certification", emissor: "Google Skillshop", data: "2026", pdf: "", link: "https://www.credential.net/a2708979-e1ea-44fd-bc99-fee88590fa17" },
     ],
 
     recomendacao: {
@@ -232,8 +232,8 @@ window.SITE = {
     ],
 
     certificacoes: [
-      { nome: "TikTok Media Buying Professional", emissor: "TikTok for Business", data: "2026", pdf: "" },
-      { nome: "Google Ads Display Certification", emissor: "Google Skillshop", data: "2026", pdf: "" },
+      { nome: "TikTok Media Buying Certification", emissor: "TikTok for Business", data: "2026", pdf: "", link: "https://www.credential.net/b71ee64f-2c02-4d34-99e2-31d61d002673?key=b41809fcd03b176f8cf08c61c64fab2ba6f2c18856a71967d04f153131a1f374" },
+      { nome: "Google Ads Display Certification", emissor: "Google Skillshop", data: "2026", pdf: "", link: "https://www.credential.net/a2708979-e1ea-44fd-bc99-fee88590fa17" },
     ],
 
     recomendacao: {
