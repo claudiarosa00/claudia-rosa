@@ -43,6 +43,15 @@
       <div class="chips">${g.itens.map((i) => `<span class="chip">${esc(i)}</span>`).join("")}</div>
     </div>`).join("");
 
+  const C = S.certificacoes || [];
+  $("certs").innerHTML = C.map((c) => `<div class="cert reveal"><span class="cert-ico">✓</span><div><b>${esc(c.nome)}</b><span>${esc(c.emissor)} · ${esc(c.data)}</span></div></div>`).join("");
+  if (!C.length) $("certificacoes").remove();
+
+  const R = S.recomendacao;
+  if (R && R.texto) {
+    $("quote").innerHTML = `<blockquote>“${esc(R.texto)}”</blockquote><figcaption><b>${esc(R.autor)}</b><span>${esc(R.cargo)}</span></figcaption>`;
+  } else $("recomendacao").remove();
+
   $("cards").innerHTML = S.projetos.map((p) => {
     const tag = p.link ? "a" : "div";
     const attrs = p.link ? ` href="${esc(p.link)}" target="_blank" rel="noopener"` : "";
@@ -58,8 +67,7 @@
   $("idiomas").innerHTML = S.idiomas.map((i) => `<li>${esc(i)}</li>`).join("");
 
   $("footer").textContent = `© ${new Date().getFullYear()} ${S.nome}`;
-  document.title = `${S.nome} — ${S.cargo}`;
-
+  
   // Tema claro/escuro
   const root = document.documentElement;
   try { const t = localStorage.getItem("tema"); if (t) root.dataset.theme = t; } catch (e) {}

@@ -175,6 +175,21 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-co
 .contacto p { color: var(--muted); }
 .footer { padding: 40px 20px; text-align: center; color: var(--muted); font-size: .88rem; }
 
+/* CERTIFICAÇÕES */
+.certs { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+.cert { display: flex; gap: 14px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 22px; }
+.cert-ico { flex: none; width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); font-weight: 700; }
+.cert b { display: block; }
+.cert span { color: var(--muted); font-size: .92rem; }
+
+/* RECOMENDAÇÃO */
+.quote { border-left: 4px solid var(--accent); padding: 8px 0 8px 28px; max-width: 760px; }
+.quote blockquote { font-family: "Fraunces", Georgia, serif; font-size: clamp(1.2rem, 2.4vw, 1.55rem); line-height: 1.45; }
+.quote figcaption { margin-top: 18px; }
+.quote figcaption b { display: block; }
+.quote figcaption span { color: var(--muted); font-size: .92rem; }
+.avatar img { object-position: center 20%; }
+
 /* ANIMAÇÃO */
 .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
 .reveal.visible { opacity: 1; transform: none; }
