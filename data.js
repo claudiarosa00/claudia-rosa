@@ -92,22 +92,7 @@ window.SITE = {
     cargo: "Account Manager, Arena Media Portugal",
   },
 
-  projetos: [
-    {
-      titulo: "Plano de marketing: Frutos Secos e Secados",
-      descricao:
-        "Projeto com a Confederação dos Agricultores de Portugal: plano de marketing, negócio e comunicação para uma ideia inovadora na comercialização de frutos secos e secados.",
-      tags: ["IPAM", "2021", "Estratégia"],
-      link: "",
-    },
-    {
-      titulo: "Comunicação interna: Century 21",
-      descricao:
-        "Projeto com a Century 21 do Centro Comercial Colombo sobre o efeito da comunicação interna na felicidade e no bem-estar dos colaboradores.",
-      tags: ["IPAM", "2021", "Research"],
-      link: "",
-    },
-  ],
+  projetos: [], // vazio = a secção não aparece
 
   formacao: [
     { curso: "Mestrado em Data-Driven Marketing", instituicao: "NOVA IMS · 16 valores", periodo: "2023 — 2025" },
