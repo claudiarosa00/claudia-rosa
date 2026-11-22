@@ -110,7 +110,7 @@ h2 {
 }
 .sobre-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 48px; }
 .sobre-texto p { color: var(--muted); font-size: 1.05rem; margin-bottom: 16px; }
-.numeros { display: grid; gap: 12px; }
+.numeros { display: grid; gap: 12px; align-content: start; }
 .numero {
   background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
   padding: 18px 22px; display: flex; align-items: baseline; gap: 14px;
@@ -189,6 +189,19 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-co
 .quote figcaption b { display: block; }
 .quote figcaption span { color: var(--muted); font-size: .92rem; }
 .avatar img { object-position: center 20%; }
+
+/* COMO TRABALHO */
+.abordagem { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.abord { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 26px; }
+.abord-ico { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 14px; background: var(--accent-soft); font-size: 1.4rem; margin-bottom: 16px; }
+.abord h3 { font-size: 1.12rem; margin-bottom: 8px; }
+.abord p { color: var(--muted); }
+
+/* CONTACTO INFO */
+.contact-info { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 28px; margin-top: 22px; }
+.contact-info a { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 600; font-size: 1.05rem; }
+.contact-info a:hover { color: var(--accent); }
+.contact-info svg { width: 18px; height: 18px; color: var(--accent); }
 
 /* ANIMAÇÃO */
 .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }

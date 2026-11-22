@@ -12,23 +12,44 @@ window.SITE = {
   foto: "foto.jpg",
 
   frase:
-    "Estratégias de media integradas, do planeamento à análise, com dados e automação para decidir melhor.",
+    "Estratégias de media integradas, com olho para detetar problemas e vontade de os resolver, usando dados, automação e AI.",
 
   sobre: [
     "Sou Media Expert com 4 anos de experiência no desenvolvimento de estratégias de media integradas, em canais digitais e offline. Acompanho todo o ciclo de vida das campanhas: estratégia, planeamento, compra, otimização, reporting e análise.",
     "No digital, tenho experiência prática em Paid Social (Meta, TikTok e LinkedIn), compra direta de media e Google, em estreita colaboração com as equipas de Programmatic e AdOps. No offline, trabalho com OOH, rádio, imprensa e TV.",
     "Procuro constantemente formas de tornar os processos mais simples e eficientes: melhorei fluxos de reporting e planeamento, criei templates, automatizei tarefas repetitivas e estruturei melhor a informação das campanhas.",
-    "Tenho especial interesse na interseção entre media, dados e automação, e em como estes podem levar a decisões mais inteligentes, processos mais eficientes e estratégias de media mais fortes.",
+    "O que mais me motiva é identificar o que não está a funcionar, muitas vezes antes de alguém dar por isso, e encontrar uma solução prática e escalável. Gosto de questionar a forma como as coisas sempre foram feitas.",
+    "Trabalho muito com inteligência artificial e gosto mesmo disso: uso-a no dia a dia para analisar informação, automatizar tarefas e encontrar novas formas de trabalhar. Interessa-me sobretudo a interseção entre media, dados e AI, e como podem levar a decisões mais inteligentes e estratégias de media mais fortes.",
   ],
 
   numeros: [
     { valor: "4", legenda: "anos de experiência em media" },
     { valor: "10", legenda: "certificações profissionais" },
+    { valor: "AI", legenda: "no dia a dia de trabalho" },
     { valor: "5+", legenda: "indústrias, de energia a luxo" },
   ],
 
+  abordagem: [
+    {
+      icone: "🔍",
+      titulo: "Detetar problemas",
+      texto: "Tenho facilidade em perceber onde um processo, uma campanha ou um fluxo de trabalho está a falhar, e não espero que alguém me peça para olhar para isso.",
+    },
+    {
+      icone: "💡",
+      titulo: "Criar soluções",
+      texto: "Transformo esses problemas em soluções práticas: templates, processos mais simples e tarefas automatizadas que poupam tempo à equipa.",
+    },
+    {
+      icone: "✨",
+      titulo: "Trabalhar com AI",
+      texto: "Uso inteligência artificial no dia a dia para analisar dados, automatizar trabalho repetitivo e explorar novas formas de planear e otimizar media.",
+    },
+  ],
+
   links: {
-    email: "", // ex: "nome@exemplo.com" (vazio = não aparece)
+    email: "cfonsecarosa14@gmail.com",
+    telefone: "+351 924 153 543",
     linkedin: "https://www.linkedin.com/in/cl%C3%A1udia-rosa-95681817a/",
     github: "",
     cv: "", // ex: "cv.pdf" (coloca o PDF na mesma pasta)
@@ -71,12 +92,12 @@ window.SITE = {
       itens: ["Estratégia de media", "Planeamento", "Compra de media", "Paid Social", "Google Ads", "Programmatic", "TV · Rádio · OOH · Imprensa", "Reporting e otimização"],
     },
     {
-      grupo: "Dados & Automação",
-      itens: ["Data-Driven Marketing", "Digital Analytics", "Data Science for Marketing", "Machine Learning", "Automação de processos"],
+      grupo: "Dados, Automação & AI",
+      itens: ["Inteligência Artificial (AI)", "Data-Driven Marketing", "Digital Analytics", "Data Science for Marketing", "Machine Learning", "Automação de processos"],
     },
     {
       grupo: "Pessoais",
-      itens: ["Capacidade de organização", "Proatividade", "Comunicação", "Trabalho em equipa", "Problem-solving"],
+      itens: ["Problem-solving", "Pensamento crítico", "Capacidade de organização", "Proatividade", "Comunicação", "Trabalho em equipa"],
     },
   ],
 
